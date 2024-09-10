@@ -1,0 +1,103 @@
+.container {
+  max-width: 36rem;
+  padding: 0 3rem;
+  margin: 5rem auto 7rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 0rem;
+  align-items: center;
+  width:250px;
+  height: 250px;
+  font-size: medium;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #f0b0d3;
+  border-color: #f0b0d3;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.cardContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* 初始状态下隐藏图片 */
+  transition: opacity 0.2s ease;
+}
+
+.cardText {
+  position: relative;
+  z-index: 1;
+  font-size: 16px; /* 根据需要调整 */
+  color: #333; /* 根据需要调整 */
+}
+
+.card:hover .cardImage {
+  opacity: 1; /* 鼠标悬停时显示图片 */
+}
+
+.card:hover .cardText {
+  opacity: 0; /* 鼠标悬停时隐藏文字 */
+}
+
+.card {
+  transition: transform 0.3s ease; /* 添加动画过渡效果 */
+}
+
+.card:hover {
+  transform: scale(1.1); /* 悬停时放大卡片 */
+}
