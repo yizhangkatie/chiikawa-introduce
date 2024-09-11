@@ -83,8 +83,8 @@
   position: relative;
   z-index: 1;
   opacity: 0;
-  font-size: 16px; /* 根据需要调整 */
-  color: #333; /* 根据需要调整 */
+  font-size: 16px; 
+  color: #333; 
 }
 
 .card:hover .cardImage {
@@ -106,5 +106,5 @@
 .slideshow-background {
   background-size: cover;
   background-position: center;
-  transition:  opacity 1s ease-in-out; /* 设置过渡效果 */
+  transition:  opacity 0.4s ease-in-out; /* 动画过渡效果 */
 }

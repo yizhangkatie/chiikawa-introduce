@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/images/icon.png" />
       </Head>
             {/* 添加导航菜单 */}
-            <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 flex items-center justify-center ">
+        <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 px-6 flex items-center justify-center ">
         <span className="text-2xl font-bold">chiikawa</span>
         <ul className="flex  space-x-12 ml-auto">
           <li>

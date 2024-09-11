@@ -22,7 +22,7 @@ const author = () => {
                     癒し系イラストにおける独特な世界観で、SNSで人気を集めています。</p>
             </div>
         </div>
-        <div class="w-full h-screen bg-cover bg-center slideshow-background animate-slideshow">
+        <div class="w-full h-screen bg-cover m-auto bg-center slideshow-background animate-slideshow">
         </div>
     </main>
     )

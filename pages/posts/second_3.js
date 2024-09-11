@@ -11,7 +11,7 @@ export default function SecondThree(){
             
             <img
                 src="/images/all_3.jpg" 
-                alt="chiikawa图片"
+                alt="usagi图片"
                 className="w-full object-cover m-auto"
             />
             <p className="text-center text-lg font-semibold mt-2">
@@ -21,7 +21,6 @@ export default function SecondThree(){
 
             <div className="mt-4">
                 <Link href="/posts/first-post">← Back to last page<br/></Link>
-                <Link href="/">← Back to home</Link>
             </div>
 
         </div>

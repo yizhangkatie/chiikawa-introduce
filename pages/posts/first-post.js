@@ -17,7 +17,7 @@ const FirstPost = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <a href="/posts/second_1" className={styles.card}>
           <div className={styles.cardContent}>
-            <img src="/images/hachiware.jpg" alt="Chiikawa" className={styles.cardImage} />
+            <img src="/images/hachiware.jpg" alt="hachiware" className={styles.cardImage} />
             <div className="flex flex-col items-center">
                 <h2 className="text-xl text-black font-semibold mb-2">ハチワレ</h2>
                 <p className="text-lg">ちいかわのともだち。明るくてポジティブ。
@@ -28,7 +28,7 @@ const FirstPost = () => {
 
         <a href="/posts/second_2" className={styles.card}>
           <div className={styles.cardContent}>
-            <img src="/images/chi.jpg" alt="Chiikawa" className={styles.cardImage} />
+            <img src="/images/chi.jpg" alt="Chii" className={styles.cardImage} />
             <div className="flex flex-col items-center">
                 <h2 className="text-xl text-black font-semibold mb-2">ちいかわ</h2>
                 <p className="text-lg">ちょっぴり泣き虫だけど優しい性格。
@@ -39,7 +39,7 @@ const FirstPost = () => {
 
         <a href="/posts/second_3"className={styles.card}>                    
           <div className={styles.cardContent}>
-            <img src="/images/usagi.jpg" alt="Chiikawa" className={styles.cardImage} />
+            <img src="/images/usagi.jpg" alt="usagi" className={styles.cardImage} />
             <div className="flex flex-col items-center">
                 <h2 className="text-xl text-black font-semibold mb-2">うさぎ</h2>
                 <p className="text-lg">ちいかわのともだち。

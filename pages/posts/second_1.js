@@ -13,7 +13,7 @@ const SecondOne = () => {
             
             <img
                 src="/images/all_1.jpg" 
-                alt="chiikawa图片"
+                alt="hachiware图片"
                 className="w-full object-cover m-auto"
             />
             <p className="text-center text-lg font-semibold mt-2">
@@ -23,7 +23,6 @@ const SecondOne = () => {
 
             <div className="mt-4">
                 <Link href="/posts/first-post">← Back to last page<br/></Link>
-                <Link href="/">← Back to home</Link>
             </div>
 
         </div>
