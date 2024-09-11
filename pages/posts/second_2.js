@@ -1,16 +1,30 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default function SecondOne(){
+export default function SecondTwo(){
     return (
-        <div>
+        <div className='m-auto w-full text-center'>
+        <div className="flex flex-col items-center ">
             <Head>
                 <title>ちいかわの紹介</title>
-                <Link href="/">← Back to home</Link>
             </Head>
-            <main>
-            </main>
-        </div>
+            
+            <img
+                src="/images/all_2.jpg" 
+                alt="chiikawa图片"
+                className="w-full object-cover m-auto"
+            />
+            <p className="text-center text-lg font-semibold mt-2">
+            ちょっぴり泣き虫だけど優しい性格。
+            草むしりや討伐などをして生活している。
+            </p>
 
+            <div className="mt-4">
+                <Link href="/posts/first-post">← Back to last page<br/></Link>
+                <Link href="/">← Back to home</Link>
+            </div>
+
+        </div>
+        </div>
     )
 }

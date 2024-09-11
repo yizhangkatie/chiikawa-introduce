@@ -30,4 +30,26 @@ module.exports = {
   },
   darkMode: 'class',
   plugins: [],
+
+
+  //自定义动画
+    theme: {
+      extend: {
+        keyframes: {
+          slideshow: {
+          '0%, 33%': { opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
+          '33%, 66%': { opacity: '1', backgroundImage: "url('/images/ngn_hachiware.jpg')" },
+          '66%, 99%': { opacity: '1', backgroundImage: "url('/images/ngn_usagi.jpg')" },
+            // '0%, 33%': { backgroundImage: "url('/images/ngn_chii.jpg')" },
+            // '34%, 66%': { backgroundImage: "url('/images/ngn_hachiware.jpg')" },
+            // '67%, 100%': { backgroundImage: "url('/images/ngn_usagi.jpg')" },
+          },
+        },
+        animation: {
+          slideshow: 'slideshow 8s infinite', // 6s 的循环动画
+        },
+      },
+    },
+    plugins: [],
+  
 }

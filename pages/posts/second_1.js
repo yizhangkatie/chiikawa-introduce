@@ -12,12 +12,13 @@ const SecondOne = () => {
             </Head>
             
             <img
-                src="/images/chiikawa.jpg" 
+                src="/images/all_1.jpg" 
                 alt="chiikawa图片"
-                className="rounded-full object-cover m-auto"
+                className="w-full object-cover m-auto"
             />
             <p className="text-center text-lg font-semibold mt-2">
-                这是一段文字
+                ちいかわのともだち。明るくてポジティブ。
+                どうくつで生活している。
             </p>
 
             <div className="mt-4">
@@ -26,7 +27,8 @@ const SecondOne = () => {
             </div>
 
         </div>
-</div>    );
+        </div>    
+    );
   };
 
 export default SecondOne;

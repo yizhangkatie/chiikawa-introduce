@@ -1,13 +1,14 @@
 .container {
-  max-width: 36rem;
-  padding: 0 3rem;
-  margin: 5rem auto 7rem;
+  max-width: 100%;
+  padding: 0 ;
+  margin: 0rem auto 3rem;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .backToHome {
@@ -25,10 +26,7 @@
 }
 
 .card {
-  margin: 0rem;
   align-items: center;
-  width:250px;
-  height: 250px;
   font-size: medium;
   padding: 1.5rem;
   text-align: center;
@@ -39,6 +37,8 @@
   transition:
     color 0.15s ease,
     border-color 0.15s ease;
+  width: 300px;
+  height: 300px;
 }
 
 .card:hover,
@@ -75,23 +75,24 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0; /* 初始状态下隐藏图片 */
+  opacity: 1; /* 初始状态下显示图片 */
   transition: opacity 0.2s ease;
 }
 
 .cardText {
   position: relative;
   z-index: 1;
+  opacity: 0;
   font-size: 16px; /* 根据需要调整 */
   color: #333; /* 根据需要调整 */
 }
 
 .card:hover .cardImage {
-  opacity: 1; /* 鼠标悬停时显示图片 */
+  opacity: 0; /* 鼠标悬停时隐藏图片 */
 }
 
 .card:hover .cardText {
-  opacity: 0; /* 鼠标悬停时隐藏文字 */
+  opacity: 1; /* 鼠标悬停时显示文字 */
 }
 
 .card {
@@ -100,4 +101,10 @@
 
 .card:hover {
   transform: scale(1.1); /* 悬停时放大卡片 */
+}
+
+.slideshow-background {
+  background-size: cover;
+  background-position: center;
+  transition:  opacity 1s ease-in-out; /* 设置过渡效果 */
 }

@@ -11,13 +11,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Chiikawa (ちいかわ), also known as Nanka Chiisakute Kawaii Yatsu (なんか小さくてかわいいやつ,
-           "Something Small and Cute"), is a Japanese manga series by Nagano.</p>
-      </section>
-      <h1 className={styles.card}>
-          <Link href="/posts/first-post">Learn more!</Link>
-        </h1>
+
     </Layout>
   );
 }

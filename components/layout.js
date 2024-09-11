@@ -4,79 +4,52 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
+
 const name = 'chiikawa';
 export const siteTitle = 'chiikawa-ちいかわ';
+
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+
+
+      {/* 添加导航菜单 */}
+      <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 flex items-center justify-center ">
+        <span className="text-2xl font-bold">{name}</span>
+        <ul className="flex  space-x-12 ml-auto">
+          <li>
+            <Link href="/posts/author" className="text-lg font-semibold">author</Link>
+          </li>
+          <li>
+            <Link href="/posts/first-post" className="text-lg font-semibold">main caracter</Link>
+          </li>
+          <li>
+            <Link href="/other_characters" className="text-lg font-semibold">sub caracter</Link>
+          </li>
+        </ul>
+      </nav>
+
       <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/chiikawa.jpg"
-              className={utilStyles.borderCircle}
-              height={256}
-              width={256}
-              alt=""
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-          <h2 className={utilStyles.headingXl}>
-              <div className={utilStyles.colorInherit}>
-                <p>主要キャラクター資料</p>
+
+            <div className="flex grid place-items-center w-full h-screen ">
+              <img
+                src="/images/homepage.jpg"
+                alt=""
+                className=" w-full max-h-full object-contain"
+              />
+              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              <div className="flex flex-col justify-center items-center space-y-3 ">
+                <h1 className="w-1/2 text-center text-lg font-semibold mt-2" >
+                  Chiikawa (ちいかわ), also known as Nanka Chiisakute Kawaii Yatsu (なんか小さくてかわいいやつ,
+                  "Something Small and Cute"), is a Japanese manga series by Nagano.
+                </h1>
+                <p className="flex items-center justify-center text-center text-medium p-6 text-current no-underline border border-gray-300 rounded-lg transition-all duration-150 ease-in-out w-72 h-20 hover:text-pink-300 hover:border-pink-300 hover:scale-105">
+                  <Link href="/posts/author">Learn more!</Link>
+                </p>
               </div>
-            </h2>
-            <div className={styles.grid}>
-                <a href="/posts/second_1" className={styles.card}>
-                    <div className={styles.cardContent}>
-                        <img src="/images/hachiware.jpg" alt="Chiikawa" className={styles.cardImage} />
-                        <h3 className={styles.cardText}>ハチワレ &rarr;</h3>
-                    </div>
-                </a>
-
-                <a href="/posts/second_2" className={styles.card}>
-                    <div className={styles.cardContent}>
-                        <img src="/images/chii.jpg" alt="Chiikawa" className={styles.cardImage} />
-                        <h3 className={styles.cardText}>ちいかわ &rarr;</h3>
-                    </div>
-                </a>
-
-                <a
-                    href="/posts/second_3"className={styles.card}>                    
-                    <div className={styles.cardContent}>
-                        <img src="/images/usagi.jpg" alt="Chiikawa" className={styles.cardImage} />
-                        <h3 className={styles.cardText}>うさぎ &rarr;</h3>
-                    </div>
-                </a>
-
-                {/* <a href="/"
-                    className={styles.card}
-                >
-                    <h3>サブキャラクター &rarr;</h3>
-                </a> */}
             </div>
-
-          </>
-        )}
+            
       </header>
       <main>{children}</main>
       {!home && (
