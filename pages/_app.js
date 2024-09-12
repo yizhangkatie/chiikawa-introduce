@@ -1,8 +1,14 @@
 import "../styles/global.css";
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function App({ Component, pageProps }) {
+    const router = useRouter();
+
+    const handleNavigation = (href) => {
+      router.push(href);
+  };
     return (
     <>
       <Head>
@@ -13,16 +19,24 @@ export default function App({ Component, pageProps }) {
         <span className="text-2xl font-bold">chiikawa</span>
         <ul className="flex  space-x-12 ml-auto">
           <li>
-            <Link href="/" className="text-lg font-semibold">home</Link>
+            <a onClick={() => handleNavigation('/')} className="text-lg font-semibold cursor-pointer">
+            Home
+            </a>
           </li>
           <li>
-            <Link href="/posts/author" className="text-lg font-semibold">author</Link>
+            <a onClick={() => handleNavigation('/posts/author')} className="text-lg font-semibold cursor-pointer">
+            Author
+            </a>
           </li>
           <li>
-            <Link href="/posts/first-post" className="text-lg font-semibold">main caracter</Link>
+            <a onClick={() => handleNavigation('/posts/first-post')} className="text-lg font-semibold cursor-pointer">
+            Main Character
+            </a>
           </li>
           <li>
-            <Link href="/posts/third" className="text-lg font-semibold">sub caracter</Link>
+            <a onClick={() => handleNavigation('/posts/third')} className="text-lg font-semibold cursor-pointer">
+            Sub Character
+            </a>
           </li>
         </ul>
       </nav>

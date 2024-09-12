@@ -4,28 +4,38 @@ import styles from '/components/layout.module.css';
 import React from 'react';
 
 
-const author = () => {
+const Author = () => {
     return (
     <main className="flex items-center justify-center min-h-screen">
         <Head>
             <title>Naganoの紹介</title>
         </Head>
-        <div className="flex flex-col items-center justify-center w-72 h-144 p-6 mt-6 border border-gray rounded-lg text-center ">
-            <img
-                src="/images/ngn.jpg"
-                alt="Card Image"
-                className="w-full h-full object-cover rounded-lg mb-4"
-            />
-            <div className="flex flex-col items-center">
+    <div className="flex justify-between items-start w-full h-screen p-6">
+        <div className="w-1/2 h-4/5 flex flex-col items-center p-6 border border-gray-300 rounded-lg mt-16">
+
+                <img
+                    src="/images/ngn.jpg"
+                    alt="Card Image"
+                    className="w-auto h-auto items-center object-cover rounded-lg mb-4"
+                />
                 <h3 className="text-xl font-semibold mb-2">ナガノ</h3>
-                <p className="text-lg">イラストレーターのナガノは、「nagano」や「ちいかわ」など、
-                    癒し系イラストにおける独特な世界観で、SNSで人気を集めています。</p>
-            </div>
+                <p className="text-lg">日本のイラストレーター、漫画家。女性。自分ツッコミくま（現在のナガノのくま）、
+                ちいかわ（なんか小さくてかわいいやつ）の作者。筆ペンやシャープペンシル、
+                色鉛筆、コピックを用いたアナログらしい柔らかな線画、繊細で独特なタッチと、
+                かわいいだけではない世の中の不条理さを描くストーリーが老若男女問わず幅広く支持されている。 
+                </p>
+           
+                <Link href={"https://x.com/ngntrtr"}>nagano's X homepage</Link>
         </div>
-        <div class="w-full h-screen bg-cover m-auto bg-center slideshow-background animate-slideshow">
-        </div>
+        <div className="w-1/2 h-4/5 mt-16 bg-cover bg-center rounded-lg slideshow-background animate-slideshow ml-6"></div>
+    
+   
+
+
+</div>
+
     </main>
     )
 }
 
-export default author
+export default Author

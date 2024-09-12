@@ -8,7 +8,7 @@ const FirstPost = () => {
     <Head>
       <title>主要キャラクターの紹介</title>
     </Head>
-    <main className="flex flex-col items-center justify-center pt-20 px-6">
+    <main className="flex flex-col items-center justify-center pt-20 px-6 mt-12">
       <h2 className="text-3xl font-bold mb-6 mt-8">
         <div className=" text-gray-700">
           <p>主要キャラクター資料</p>

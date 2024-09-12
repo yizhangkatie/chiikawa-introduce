@@ -7,8 +7,8 @@ const ThirdPost = () => {
       <Head>
         <title>サブキャラクターの紹介</title>
       </Head>
-      <main className="flex flex-col items-center justify-center pt-20 px-6">
-        <h2 className="text-3xl font-bold mb-6 mt-8">
+      <main className="flex flex-col items-center justify-center pt-20 px-6 mt-4">
+        <h2 className="text-3xl font-bold ">
           <div className=" text-gray-700">
             <p>サブキャラクター資料</p>
           </div>

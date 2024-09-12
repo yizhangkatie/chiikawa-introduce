@@ -9,19 +9,33 @@ export default function SecondThree(){
                 <title>うさぎの紹介</title>
             </Head>
             
-            <img
-                src="/images/all_3.jpg" 
-                alt="usagi图片"
-                className="w-full object-cover m-auto"
-            />
-            <p className="text-center text-lg font-semibold mt-2">
-            ちいかわのともだち。
-            「ウラ」「ヤハ」など大声でよく叫ぶ。
-            </p>
-
-            <div className="mt-4">
-                <Link href="/posts/first-post">← Back to last page<br/></Link>
+            <div class="relative w-full h-screen bg-cover ">
+            <div class="absolute left-0 flex items-center h-full">
+                <img src="/images/role_usagi.jpg" alt="bg_usagi" class="w-auto h-screen object-contain mt-12"/>
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <img src="/images/usagi.jpg" alt="role_usagi" class="w-36 h-36 object-contain rounded-full"/>
+                <div class="text-left p-4 w-full max-w-xs">
+                    <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
+                    <p class="text-lg mb-2  inline">2020年 5月 1日</p><br/>
+                    
+                    <p className="text-lg font-semibold mb-2 inline">紹介：</p>
+                    <p class="text-lg mb-2 inline">青・白の毛のハチワレ模様の猫がモチーフとなっている。</p><br/>
+                   
+                    <p className="text-lg font-semibold mb-2 inline">武器：</p>
+                    <p class="text-lg mb-2  inline">水色のさすまた</p><br/>
+                    
+                    <p className="text-lg font-semibold mb-2 inline">性格：</p>
+                    <p class="text-lg mb-2  inline">社交的で楽天家</p><br/>
+                    
+                    <p className="text-lg font-semibold mb-2 inline">能力：</p>
+                    <p class="text-lg mb-2 inline">草むしり検定５級</p><br/><br/>
+                </div>
+                </div>
             </div>
+            <div className="absolute mt-4 bottom-2 right-4">
+                <Link href="/posts/first-post">← Back to last page</Link>
+            </div>
+        </div>
 
         </div>
         </div>

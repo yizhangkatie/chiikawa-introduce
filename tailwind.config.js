@@ -16,6 +16,9 @@ module.exports = {
         content: 'calc(100vh - 64px)',
         mcontent: 'calc(100vh - 114px)',
       },
+      backgroundImage: {
+        'radial-gradient': 'radial-gradient(circle, var(--tw-gradient-stops))',
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': {
@@ -25,29 +28,25 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
+        slideshow: {
+        '0%, 33%': { opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
+        '33%, 66%': { opacity: '1', backgroundImage: "url('/images/ngn_hachiware.jpg')" },
+        '66%, 100%': { opacity: '1', backgroundImage: "url('/images/ngn_usagi.jpg')" },
+        '100%':{ opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
+        },
+
+        fadeIn: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0.2' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 3s ease-out',
+        slideshow: 'slideshow 12s infinite',
       },
     },
   },
-  darkMode: 'class',
   plugins: [],
 
 
-  //自定义动画
-    theme: {
-      extend: {
-        keyframes: {
-          slideshow: {
-          '0%, 33%': { opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
-          '33%, 66%': { opacity: '1', backgroundImage: "url('/images/ngn_hachiware.jpg')" },
-          '66%, 100%': { opacity: '1', backgroundImage: "url('/images/ngn_usagi.jpg')" },
-          '100%':{ opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
-          },
-        },
-        animation: {
-          slideshow: 'slideshow 10s infinite', // 循环动画
-        },
-      },
-    },
-    plugins: [],
-  
 }
