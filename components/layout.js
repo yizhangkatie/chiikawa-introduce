@@ -25,8 +25,8 @@ export default function Layout({ children, home }) {
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
               <div className="flex flex-col justify-center items-center space-y-3 ">
                 <h1 className="w-1/2 text-center text-lg font-semibold mt-2 mb-6" >
-                  Chiikawa (ちいかわ), also known as Nanka Chiisakute Kawaii Yatsu (なんか小さくてかわいいやつ,
-                  "Something Small and Cute"), is a Japanese manga series by Nagano.
+                【なんか小さくてかわいいやつ】通称「ちいかわ」たちが送る楽しくて、ちょっぴり切ない物語。
+                時には辛いことで泣いちゃうけれど「ちいかわ」の周りにはやさしい友達や個性豊かなキャラクターがたくさん！
                 </h1>
               </div>
             </div>

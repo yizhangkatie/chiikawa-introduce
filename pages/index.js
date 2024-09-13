@@ -6,20 +6,22 @@ import { useRouter } from 'next/router';
 import Author from './posts/author';
 import FirstPost from './posts/first-post';
 import ThirdPost from './posts/third';
+import Footer from './posts/footer';
 
 export default function Home() {
-  // const router = useRouter();
+  const router = useRouter();
 
   return (
     <Layout home>
-      <Head>
-        <title>chiikawa-ちいかわ</title>
-      </Head>
       <div>
         <section id="section1" className="h-screen m-auto"> <Author /> </section>
         <section id="section2" className="h-screen m-auto"> <FirstPost /> </section>
         <section id="section3" className="h-screen m-auto"> <ThirdPost /> </section>
+        <section id="section3" className="h-screen m-auto"> <Footer /> </section>
       </div>
+      <Head>
+        <title>chiikawa-ちいかわ</title>
+      </Head>
     </Layout>
     
   );
