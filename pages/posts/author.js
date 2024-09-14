@@ -7,9 +7,9 @@ import React from 'react';
 const Author = () => {
     return (
     <main className="flex items-center justify-center min-h-screen">
-        <Head>
+        {/* <Head>
             <title>Naganoの紹介</title>
-        </Head>
+        </Head> */}
     <div className="flex justify-between items-start w-full h-screen p-6">
         <div className="w-1/2 h-4/5 flex flex-col items-center p-6 border border-gray-300 rounded-lg mt-16">
 
@@ -37,5 +37,7 @@ const Author = () => {
     </main>
     )
 }
+
+Author.title = 'Naganoの紹介'
 
 export default Author

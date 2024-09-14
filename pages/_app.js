@@ -1,12 +1,14 @@
 import "../styles/global.css";
 import Head from 'next/head';
 import Link from 'next/link';
+import Header from "../components/Head";
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useState } from "react";
 import Image from "next/image";
 
 export default function App({ Component, pageProps }) {
+  console.info(Component)
     const router = useRouter();
     const handleNavigation = (href) => {
       router.push(href);};
@@ -48,9 +50,7 @@ export default function App({ Component, pageProps }) {
 
     return (
     <>
-      <Head>
-        <link rel="icon" href="/images/icon.png" />
-      </Head>
+      <Header component={Component} />
       {!isOnFirstPage && (
       <div className=" flex flex-col items-center fixed bottom-4 z-50 right-4">
       <span className="writing-mode-vertical-rl mb-1 text-brown font-bold">TOP</span>
@@ -69,8 +69,11 @@ export default function App({ Component, pageProps }) {
       )}
 
       {/* 导航 */}
-        <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 px-6 flex items-center justify-center ">
-        <span className="text-2xl font-bold">chiikawa</span>
+      <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 px-6 flex items-center justify-center ">
+          <a href="/">
+            <img src="/images/top_name.jpg" alt="top name" className="w-28 h-8"></img>
+          </a>
+          
         <ul className="flex  space-x-12 ml-auto">
           <li>
             <a onClick={() => handleNavigation('/')} className="text-lg font-semibold cursor-pointer">

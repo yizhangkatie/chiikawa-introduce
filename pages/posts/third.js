@@ -4,9 +4,9 @@ import styles from '/components/layout.module.css';
 const ThirdPost = () => {  
     return (
       <>
-      <Head>
+      {/* <Head>
         <title>サブキャラクターの紹介</title>
-      </Head>
+      </Head> */}
       <main className="flex flex-col items-center justify-center pt-20 px-6 mt-4">
         <h2 className="text-3xl font-bold ">
           <div className=" text-gray-700">
@@ -61,5 +61,7 @@ const ThirdPost = () => {
       </main>
     </>
   );}
+  
+  ThirdPost.title = 'サブキャラクターの紹介'
   
   export default ThirdPost;

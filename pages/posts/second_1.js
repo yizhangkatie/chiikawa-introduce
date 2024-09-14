@@ -33,6 +33,8 @@ const SecondOne = () => {
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <img src="/images/hachiware.jpg" alt="role_hachiware" className="w-36 h-36 object-contain rounded-full"/>
                 <div className="text-left p-4 w-full max-w-xs">
+                    <p className='text-lg font-semibold mb-2 inline'>名前：</p>
+                    <p className="text-lg mb-2  inline">ハチワレ</p><br/>
                     <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
                     <p className="text-lg mb-2  inline">2020年 5月 1日</p><br/>
                     
