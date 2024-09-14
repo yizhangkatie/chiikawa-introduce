@@ -66,12 +66,16 @@ useEffect(() => {
           </div>
         </a>
       </div>
-      <div className='relative w-screen h-auto pl-4'>
-        <div className="flex bottom-0 left-10 ">            
+      <div className='relative bottom-0 w-screen h-36 '>
+      <div className='relative w-36 h-36 '>                  
             <img 
-                src={images[imageIndex]} 
-                alt="Carousel" 
-                className="w-36 h-36 object-contain"/>
+                src="/images/chii_anime1.jpg"
+                alt="chii" 
+                className="absolute top-0 left-4 w-full h-full mt-2 object-contain"/>
+
+                <img src="/images/chii_anime2.jpg" 
+                alt="chii" 
+                className="absolute bottom-0 left-4 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-400 object-contain"></img>
         </div>
       </div>
 

@@ -7,13 +7,13 @@ const ThirdPost = () => {
       {/* <Head>
         <title>サブキャラクターの紹介</title>
       </Head> */}
-      <main className="flex flex-col items-center justify-center pt-20 px-6 mt-4">
-        <h2 className="text-3xl font-bold ">
+      <main className="flex flex-col min-h-screen items-center justify-center pt-16 px-6 mt-4">
+        <h2 className="text-3xl font-bold mt-4">
           <div className=" text-gray-700">
             <p>サブキャラクター資料</p>
           </div>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6 mb-6">
           <a href="/posts/second_1" className={styles.card}>
             <div className={styles.cardContent}>
               <img src="/images/shisa.jpg" alt="Chiikawa" className={styles.cardImage} />
