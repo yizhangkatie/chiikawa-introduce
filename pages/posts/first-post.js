@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import Head from 'next/head';
+
 import styles from '/components/layout.module.css';
 import { useState,useEffect } from 'react';
 
