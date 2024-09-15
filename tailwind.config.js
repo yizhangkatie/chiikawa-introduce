@@ -35,13 +35,8 @@ module.exports = {
         '100%':{ opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
         },
 
-        fadeIn: {
-          '0%': { opacity: '1' },
-          '100%': { opacity: '0.2' },
-        },
       },
       animation: {
-        fadeIn: 'fadeIn 3s ease-out',
         slideshow: 'slideshow 12s infinite',
       },
     },

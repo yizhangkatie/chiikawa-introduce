@@ -4,10 +4,12 @@ import styles from '/components/layout.module.css';
 const ThirdPost = () => {  
     return (
       <>
-      {/* <Head>
-        <title>サブキャラクターの紹介</title>
-      </Head> */}
-      <main className="flex flex-col min-h-screen items-center justify-center pt-16 px-6 mt-4">
+
+      <main className="relative min-h-screen pt-16 px-6 mt-4">
+        <div className='absolute right-0 bottom-0 w-auto h-auto mr-6'>
+          <img src="/images/momonga_shake.jpg" alt="Shaking Image" className={styles.shakeImg} />
+        </div>
+<div className='flex flex-col min-h-screen items-center justify-center'>
         <h2 className="text-3xl font-bold mt-4">
           <div className=" text-gray-700">
             <p>サブキャラクター資料</p>
@@ -57,6 +59,7 @@ const ThirdPost = () => {
               </div>
             </div>
           </a>
+        </div>
         </div>
       </main>
     </>

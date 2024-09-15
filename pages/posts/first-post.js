@@ -20,9 +20,6 @@ useEffect(() => {
 
   return (
     <>
-    {/* <Head>
-      <title>主要キャラクターの紹介</title>
-    </Head> */}
 
     <main className="flex flex-col h-full items-center justify-center pt-10 px-6 mt-12">
 
@@ -65,8 +62,8 @@ useEffect(() => {
           </div>
         </a>
       </div>
-      <div className='relative bottom-0 w-screen h-36 '>
-      <div className='relative w-36 h-36 '>                  
+      <div className='relative bottom-0 w-screen h-48 '>
+      <div className='relative w-48 h-48 '>                  
             <img 
                 src="/images/chii_anime1.jpg"
                 alt="chii" 

@@ -14,15 +14,22 @@ export default function Layout({ children, home }) {
       
       <header className={styles.header}>
 
-            <div className="flex grid place-items-center w-full min-h-screen ">
+            <div className="flex flex-col place-items-center w-full  min-h-screen">
+              <div className='relative w-full min-h-screen'>
               <img
-                src="/images/homepage.jpg"
+                src="/images/home_bg.jpg"
                 alt=""
-                className="w-full min-h-sceen object-contain overflow-hidden"
+                className=" w-full max-w-full mx-auto min-h-sceen object-fill overflow-hidden"
               />
-                    
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              <img
+                src="/images/home_cloud.jpg"
+                alt=""
+                className="absolute top-0 w-full max-w-full mx-auto min-h-screen object-contain overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105"
+              />
+              </div>      
+
               <div className="flex flex-col justify-center items-center space-y-3 ">
+                <h1 className={utilStyles.heading2Xl}>{name}</h1>
                 <h1 className="w-1/2 text-center text-lg font-semibold mt-2 mb-6" >
                 【なんか小さくてかわいいやつ】通称「ちいかわ」たちが送る楽しくて、ちょっぴり切ない物語。
                 時には辛いことで泣いちゃうけれど「ちいかわ」の周りにはやさしい友達や個性豊かなキャラクターがたくさん！

@@ -75,26 +75,36 @@ export default function App({ Component, pageProps }) {
             <img src="/images/top_name.jpg" alt="top name" className="w-28 h-8"></img>
           </a>
           
-        <ul className="flex space-x-12 ml-auto">
+        <ul className="flex space-x-4 ml-auto">
           <li>
+            <div className="w-auto h-16 hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/')} className="text-lg font-semibold cursor-pointer">
             Home
             </a>
+            </div>
           </li>
           <li>
+            <div className="w-auto h-16 hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/posts/author')} className="text-lg font-semibold cursor-pointer">
             Author
             </a>
+            </div>
           </li>
           <li>
+            <div className="w-auto h-16 hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/posts/first-post')} className="text-lg font-semibold cursor-pointer">
             Main Character
             </a>
+            </div>
+
           </li>
           <li>
+          <div className="w-auto h-16 hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/posts/third')} className="text-lg font-semibold cursor-pointer">
             Sub Character
-            </a>
+            </a>            
+          </div>
+
           </li>
         </ul>
       </nav>
