@@ -19,7 +19,7 @@ const Author = () => {
                     className="w-auto h-auto items-center object-cover rounded-lg mb-4"
                 />
                 <h3 className="text-xl font-semibold mb-2">ナガノ</h3>
-                <p className="text-lg">日本のイラストレーター、漫画家。女性。自分ツッコミくま（現在のナガノのくま）、
+                <p className="text-lg text-center">日本のイラストレーター、漫画家。女性。自分ツッコミくま（現在のナガノのくま）、
                 ちいかわ（なんか小さくてかわいいやつ）の作者。筆ペンやシャープペンシル、
                 色鉛筆、コピックを用いたアナログらしい柔らかな線画、繊細で独特なタッチと、
                 かわいいだけではない世の中の不条理さを描くストーリーが老若男女問わず幅広く支持されている。 

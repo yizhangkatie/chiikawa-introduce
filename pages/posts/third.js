@@ -12,11 +12,11 @@ const ThirdPost = () => {
 <div className='flex flex-col min-h-screen items-center justify-center'>
         <h2 className="text-3xl font-bold mt-4">
           <div className=" text-gray-700">
-            <p>サブキャラクター資料</p>
+            <p>サブキャラ資料</p>
           </div>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6 mb-6">
-          <a href="/posts/second_1" className={styles.card}>
+          <a href="/posts/third_1" className={styles.card}>
             <div className={styles.cardContent}>
               <img src="/images/shisa.jpg" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
@@ -27,7 +27,7 @@ const ThirdPost = () => {
             </div>
           </a>
   
-          <a href="/posts/second_2" className={styles.card}>
+          <a href="/posts/third_2" className={styles.card}>
             <div className={styles.cardContent}>
               <img src="/images/momonga.jpg" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
@@ -38,7 +38,7 @@ const ThirdPost = () => {
             </div>
           </a>
   
-          <a href="/posts/second_3"className={styles.card}>                    
+          <a href="/posts/third_3"className={styles.card}>                    
             <div className={styles.cardContent}>
               <img src="/images/kurimanjyu.jpg" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
@@ -49,7 +49,7 @@ const ThirdPost = () => {
             </div>
           </a>
 
-          <a href="/posts/second_3"className={styles.card}>                    
+          <a href="/posts/third_4"className={styles.card}>                    
             <div className={styles.cardContent}>
               <img src="/images/rako.jpg" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
@@ -65,6 +65,6 @@ const ThirdPost = () => {
     </>
   );}
   
-  ThirdPost.title = 'サブキャラクターの紹介'
+  ThirdPost.title = 'サブキャラの紹介'
   
   export default ThirdPost;

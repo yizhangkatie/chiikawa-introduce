@@ -25,7 +25,7 @@ useEffect(() => {
 
       <h2 className="text-3xl font-bold mb-6 mt-8">
         <div className=" text-gray-700">
-          <p>主要キャラクター資料</p>
+          <p>メインキャラ資料</p>
         </div>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -79,6 +79,6 @@ useEffect(() => {
   </>
 )}
 
-FirstPost.title = '主要キャラクターの紹介'
+FirstPost.title = 'メインキャラの紹介'
 
 export default FirstPost;
