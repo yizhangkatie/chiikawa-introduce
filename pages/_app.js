@@ -38,10 +38,10 @@ export default function App({ Component, pageProps }) {
         const scrollY = window.scrollY;
         if (scrollY > 300) { 
           setIsOnFirstPage(false);
-        } else {setIsOnFirstPage(true);}
-        if (scrollY > 300) {
           setIsScrolling(true);
-        } else {setIsScrolling(false);
+        } else {
+          setIsOnFirstPage(true);
+          setIsScrolling(false);
         }
       };
     
@@ -70,28 +70,28 @@ export default function App({ Component, pageProps }) {
       )}
 
       {/* 导航 */}
-      <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 px-6 flex items-center justify-center ">
+      <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 px-6 flex items-center justify-center overflow-visible">
           <a href="/">
-            <img src="/images/top_name.jpg" alt="top name" className="w-28 h-8"></img>
+            <img src="/images/top_name.jpg" alt="top name" className="w-1/4 h-full flex-shrink-0 object-contain"></img>
           </a>
           
-        <ul className="flex space-x-4 ml-auto">
+        <ul className="flex space-x-4 sm:space-x-2 ml-auto">
           <li>
-            <div className="w-auto h-16 hover:bg-pink-400 p-4">
+            <div className="w-auto h-full hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/')} className="text-lg font-semibold cursor-pointer">
             Home
             </a>
             </div>
           </li>
           <li>
-            <div className="w-auto h-16 hover:bg-pink-400 p-4">
+            <div className="w-auto h-full hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/posts/author')} className="text-lg font-semibold cursor-pointer">
             Author
             </a>
             </div>
           </li>
           <li>
-            <div className="w-auto h-16 hover:bg-pink-400 p-4">
+            <div className="w-auto h-full hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/posts/first-post')} className="text-lg font-semibold cursor-pointer">
             Main Character
             </a>
@@ -99,7 +99,7 @@ export default function App({ Component, pageProps }) {
 
           </li>
           <li>
-          <div className="w-auto h-16 hover:bg-pink-400 p-4">
+          <div className="w-auto h-full hover:bg-pink-400 p-4">
             <a onClick={() => handleNavigation('/posts/third')} className="text-lg font-semibold cursor-pointer">
             Sub Character
             </a>            

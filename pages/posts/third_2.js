@@ -12,13 +12,13 @@ const ThirdTwo =()=>{
                 <p className='text-lg font-semibold inline'>名前：</p>
                         <p className="text-lg  inline">モモンガ</p><br/>
                         <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
-                        <p className="text-lg inline">2020年 5月 1日</p><br/>
+                        <p className="text-lg inline">2020年 7月 22日</p><br/>
     
                         <p className="text-lg font-semibold mb-2 inline">紹介：</p>
-                        <p className="text-lg inline">青・白の毛のハチワレ模様の猫がモチーフとなっている。</p><br/>
+                        <p className="text-lg inline">ふわふわで可愛らしい風貌の白いモモンガ。</p><br/>
                         
                         <p className="text-lg font-semibold mb-2 inline">性格：</p>
-                        <p className="text-lg mb-2  inline">社交的で楽天家</p><br/>          
+                        <p className="text-lg mb-2  inline">生活態度が享楽的で労働意欲が低い</p><br/>          
                      
                 </div>
             </div>

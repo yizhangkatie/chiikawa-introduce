@@ -12,13 +12,13 @@ const ThirdOne =()=>{
                 <p className='text-lg font-semibold inline'>名前：</p>
                         <p className="text-lg  inline">シーサー</p><br/>
                         <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
-                        <p className="text-lg inline">2020年 5月 1日</p><br/>
+                        <p className="text-lg inline">2021年 8月 24日</p><br/>
     
                         <p className="text-lg font-semibold mb-2 inline">紹介：</p>
-                        <p className="text-lg inline">青・白の毛のハチワレ模様の猫がモチーフとなっている。</p><br/>
+                        <p className="text-lg inline">沖縄県で伝説の獣像「シーサー」をモデルにして。</p><br/>
                         
                         <p className="text-lg font-semibold mb-2 inline">性格：</p>
-                        <p className="text-lg mb-2  inline">社交的で楽天家</p><br/>          
+                        <p className="text-lg mb-2  inline">勤勉で努力を惜しまない、優しい</p><br/>          
                      
                 </div>
             </div>

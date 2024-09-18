@@ -12,13 +12,13 @@ const ThirdThree = ()=>{
                 <p className='text-lg font-semibold inline'>名前：</p>
                         <p className="text-lg  inline">栗まんじゅう</p><br/>
                         <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
-                        <p className="text-lg inline">2020年 5月 1日</p><br/>
+                        <p className="text-lg inline">2020年 1月 29日</p><br/>
     
                         <p className="text-lg font-semibold mb-2 inline">紹介：</p>
-                        <p className="text-lg inline">青・白の毛のハチワレ模様の猫がモチーフとなっている。</p><br/>
+                        <p className="text-lg inline">和菓子の栗まんじゅうに動物のラーテルを混ぜたようなキャラクター。</p><br/>
                         
                         <p className="text-lg font-semibold mb-2 inline">性格：</p>
-                        <p className="text-lg mb-2  inline">社交的で楽天家</p><br/>          
+                        <p className="text-lg mb-2  inline">おっさん臭くて優しい</p><br/>          
                      
                 </div>
             </div>

@@ -20,8 +20,8 @@ useEffect(() => {
 
   return (
     <>
-
-    <main className="flex flex-col h-full items-center justify-center pt-10 px-6 mt-12">
+   
+    <main className="flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3 mb-16">
 
       <h2 className="text-3xl font-bold mb-6 mt-8">
         <div className=" text-gray-700">
@@ -62,7 +62,7 @@ useEffect(() => {
           </div>
         </a>
       </div>
-      <div className='relative bottom-0 w-screen h-48 '>
+      <div className='relative bottom-0 w-full h-48 '>
       <div className='relative w-48 h-48 '>                  
             <img 
                 src="/images/chii_anime1.jpg"

@@ -15,16 +15,16 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
 
             <div className="flex flex-col place-items-center w-full  min-h-screen">
-              <div className='relative w-full min-h-screen'>
+              <div className='relative w-full min-h-screen items-center justify-center'>
               <img
                 src="/images/home_bg.jpg"
                 alt=""
-                className=" w-full max-w-full mx-auto min-h-sceen object-fill overflow-hidden"
+                className="absolute top-0 inset-0 w-full h-full object-fill"
               />
               <img
                 src="/images/home_cloud.jpg"
-                alt=""
-                className="absolute top-0 w-full max-w-full mx-auto min-h-screen object-contain overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105"
+                alt="cloud"
+                className="absolute top-0 inset-0 w-full h-full object-fill z-10 transition-transform duration-500 ease-in-out transform hover:scale-105"
               />
               </div>      
 

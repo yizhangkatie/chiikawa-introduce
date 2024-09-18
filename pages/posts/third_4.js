@@ -12,13 +12,13 @@ const ThirdFourth =()=>{
                 <p className='text-lg font-semibold inline'>名前：</p>
                         <p className="text-lg  inline">ラッコ</p><br/>
                         <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
-                        <p className="text-lg inline">2020年 5月 1日</p><br/>
+                        <p className="text-lg inline">2021年 1月 24日</p><br/>
     
                         <p className="text-lg font-semibold mb-2 inline">紹介：</p>
-                        <p className="text-lg inline">青・白の毛のハチワレ模様の猫がモチーフとなっている。</p><br/>
+                        <p className="text-lg inline">孤高の強者的な雰囲気を漂わせており、基本的には単独で行動している。</p><br/>
                         
                         <p className="text-lg font-semibold mb-2 inline">性格：</p>
-                        <p className="text-lg mb-2  inline">社交的で楽天家</p><br/>          
+                        <p className="text-lg mb-2  inline">非常に頼り甲斐があり</p><br/>          
                      
                 </div>
             </div>

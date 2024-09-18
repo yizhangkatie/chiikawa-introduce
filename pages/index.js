@@ -15,10 +15,10 @@ const Home=()=> {
     <Layout home>
 
       <div>
-        <section id="section1" className="h-screen m-auto"> <Author /> </section>
-        <section id="section2" className="h-screen m-auto"> <FirstPost /> </section>
-        <section id="section3" className="h-screen m-auto"> <ThirdPost /> </section>
-        <section id="section4" className="h-screen m-auto"> <Footer /> </section>
+        <section id="section1" className="min-h-screen m-auto"> <Author /> </section>
+        <section id="section2" className="min-h-screen m-auto"> <FirstPost /> </section>
+        <section id="section3" className="min-h-screen m-auto"> <ThirdPost /> </section>
+        <section id="section4" className="min-h-screen m-auto"> <Footer /> </section>
       </div>
 
     </Layout>

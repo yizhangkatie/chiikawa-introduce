@@ -34,6 +34,9 @@ export default function SecondThree(){
                     <p className='text-lg font-semibold mb-2 inline'>名前：</p>
                     <p className="text-lg mb-2  inline">うさぎ</p><br/>
                     
+                    <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
+                    <p className="text-lg inline">2019年 1月 22日</p><br/>
+
                     <p className="text-lg font-semibold mb-2 inline">紹介：</p>
                     <p className="text-lg mb-2 inline">ちいかわの友達である黄色い体色の兎 </p><br/>
                    
