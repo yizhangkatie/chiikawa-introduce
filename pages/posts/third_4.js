@@ -3,11 +3,14 @@ import Link from 'next/link';
 
 const ThirdFourth =()=>{
     return(
-        <div className="relative flex flex-col w-full h-screen">
-        <div className="absolute left-0 flex items-center h-full w-auto">
-            <img src="/images/role_rako.jpg" alt="role_rako" className="w-auto h-screen object-contain mt-12"/>
-            <div className="absolute inset-0 flex flex-col items-center justify-center w-auto">
-                <img src="/images/rako.jpg" alt="rako" className="w-1/2 h-1/5 object-cover rounded-full mt-12"/>
+        <div className=' m-auto w-full text-center'>
+        <div className="relative flex flex-row w-full h-screen bg-cover">
+    
+            <div className="flex flex-col items-center">
+            <div className="absolute left-0 flex items-center h-full">
+                <img src="/images/role_rako.jpg" alt="role_rako" className="w-auto h-screen object-contain mt-12"/>
+                <div className="absolute inset-0 flex flex-col items-center justify-center ">
+                    <img src="/images/rako.jpg" alt="rako" className="w-36 h-36 object-cover rounded-full"/>
                 <div className="text-left p-6 w-full max-w-xs">
                 <p className='text-lg font-semibold inline'>名前：</p>
                         <p className="text-lg  inline">ラッコ</p><br/>
@@ -26,6 +29,8 @@ const ThirdFourth =()=>{
             <div className="absolute mt-4 bottom-2 right-4">
                 <Link href="/posts/third">← Back to last page</Link>
             </div>
+        </div>
+        </div>
         </div>
     )
 }

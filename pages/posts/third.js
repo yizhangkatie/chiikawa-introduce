@@ -57,7 +57,7 @@ const ThirdPost = () => {
 
       </div>
       <div className='relative w-full h-48'>
-          <div className='absolute bottom-0 right-0 w-48 h-48 '>            
+          <div className='absolute bottom-0 right-8 w-48 h-48 '>            
             <img src="/images/momonga_shake.jpg" alt="Shaking Image" className={styles.shakeImg} /> 
           </div>
       </div>

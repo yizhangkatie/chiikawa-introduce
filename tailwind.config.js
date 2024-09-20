@@ -34,10 +34,16 @@ module.exports = {
         '66%, 100%': { opacity: '1', backgroundImage: "url('/images/ngn_usagi.jpg')" },
         '100%':{ opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
         },
+        moveUpDown: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-30px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
 
       },
       animation: {
         slideshow: 'slideshow 12s infinite',
+        moveUpDown:'moveUpDown 3s infinite',
       },
     },
   },

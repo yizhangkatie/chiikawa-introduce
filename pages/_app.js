@@ -70,38 +70,31 @@ export default function App({ Component, pageProps }) {
       )}
 
       {/* 导航 */}
-      <nav className="bg-pink-300 text-white w-full h-16 fixed top-0 left-0 z-50 px-6 flex items-center justify-center overflow-visible">
+      <nav className="bg-pink-300 text-white w-full h-12 md:h-16 fixed top-0 left-0 z-50 px-4 md:px-8 flex items-center justify-center overflow-visible">
           <a href="/">
-            <img src="/images/top_name.jpg" alt="top name" className="w-1/4 h-full flex-shrink-0 object-contain"></img>
+            <img src="/images/top_name.jpg" alt="top name" className="w-14 h-full md:w-1/4 md:h-full object-contain"></img>
           </a>
           
-        <ul className="flex space-x-4 sm:space-x-2 ml-auto">
+        <ul className="flex space-x-4 md:space-x-12 ml-auto h-12 md:h-16 ">
           <li>
-            <div className="w-auto h-full hover:bg-pink-400 p-4">
-            <a onClick={() => handleNavigation('/')} className="text-lg font-semibold cursor-pointer">
-            Home
+            <div className="w-auto h-full flex items-center justify-center hover:bg-pink-400 md:p-2">
+            <a onClick={() => handleNavigation('/posts/author')} className="text-xs md:text-lg font-semibold cursor-pointer">
+            作 者
             </a>
             </div>
           </li>
           <li>
-            <div className="w-auto h-full hover:bg-pink-400 p-4">
-            <a onClick={() => handleNavigation('/posts/author')} className="text-lg font-semibold cursor-pointer">
-            Author
-            </a>
-            </div>
-          </li>
-          <li>
-            <div className="w-auto h-full hover:bg-pink-400 p-4">
-            <a onClick={() => handleNavigation('/posts/first-post')} className="text-lg font-semibold cursor-pointer">
-            Main Character
+            <div className="w-auto h-full flex items-center hover:bg-pink-400 md:p-2">
+            <a onClick={() => handleNavigation('/posts/first-post')} className="text-xs md:text-lg font-semibold cursor-pointer">
+            メインキャラ
             </a>
             </div>
 
           </li>
           <li>
-          <div className="w-auto h-full hover:bg-pink-400 p-4">
-            <a onClick={() => handleNavigation('/posts/third')} className="text-lg font-semibold cursor-pointer">
-            Sub Character
+          <div className="w-auto h-full flex items-center hover:bg-pink-400 md:p-2">
+            <a onClick={() => handleNavigation('/posts/third')} className="text-xs md:text-lg font-semibold cursor-pointer">
+            サブキャラ
             </a>            
           </div>
 
