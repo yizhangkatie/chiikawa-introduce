@@ -4,14 +4,14 @@ import ImageCarousel from '/components/imagecarousel';
 
 export default function SecondThree(){
     const images = [
-        '/images/u1.gif',
-        '/images/u2.gif',
-        '/images/u3.gif',
-        '/images/u4.gif',
-        '/images/u5.gif',
-        '/images/u6.gif',
-        '/images/u7.gif',
-        '/images/u8.gif',
+        '/images/second/u1.gif',
+        '/images/second/u2.gif',
+        '/images/second/u3.gif',
+        '/images/second/u4.gif',
+        '/images/second/u5.gif',
+        '/images/second/u6.gif',
+        '/images/second/u7.gif',
+        '/images/second/u8.gif',
       ];
     return (
 <div className='m-auto w-full text-center'>
@@ -22,7 +22,7 @@ export default function SecondThree(){
             
         <div className="relative flex flex-row w-full h-screen bg-cover">
             <div className="flex flex-1 justify-center items-center">
-                <div className="w-full h-full flex object-contain items-center justify-center ml-56">
+                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center ml-64 md:ml-56">
                 <ImageCarousel images={images}/>
                 </div>
             </div>

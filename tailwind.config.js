@@ -40,10 +40,12 @@ module.exports = {
           '100%': { transform: 'translateY(0)' },
         },
 
+
       },
       animation: {
         slideshow: 'slideshow 12s infinite',
         moveUpDown:'moveUpDown 3s infinite',
+
       },
     },
   },
