@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import styles from '/components/layout.module.css';
 import { useState,useEffect } from 'react';
 
@@ -21,7 +21,7 @@ useEffect(() => {
   return (
     <>
    
-    <main className="flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3 mb-16">
+    <main className="relative flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3 mb-16">
 
       <h2 className="text-3xl font-bold mb-6 mt-8">
         <div className=" text-gray-700">
@@ -74,7 +74,6 @@ useEffect(() => {
                 className="absolute bottom-0 left-4 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-400 object-contain"></img>
         </div>
       </div>
-
     </main>
   </>
 )}

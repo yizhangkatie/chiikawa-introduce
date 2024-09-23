@@ -1,9 +1,8 @@
-import Head from 'next/head';
 import styles from '/components/layout.module.css';
-
+import Link from 'next/link';
 const ThirdPost = () => {  
     return (    
-    <main className="flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3">
+    <main className="relative flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3">
         <h2 className="text-3xl font-bold mt-4">
           <div className=" text-gray-700">
             <p>サブキャラ資料</p>
@@ -57,7 +56,7 @@ const ThirdPost = () => {
 
       </div>
       <div className='relative w-full h-48'>
-          <div className='absolute bottom-0 right-8 w-48 h-48 '>            
+          <div className='absolute bottom-6 md:bottom-12 right-8 md:right-16 w-48 h-42 '>            
             <img src="/images/momonga_shake.jpg" alt="Shaking Image" className={styles.shakeImg} /> 
           </div>
       </div>

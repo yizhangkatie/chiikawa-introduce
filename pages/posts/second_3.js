@@ -16,10 +16,7 @@ export default function SecondThree(){
     return (
 <div className='m-auto w-full text-center'>
         <div className="flex flex-col items-center ">
-            <Head>
-                <title>うさぎの紹介</title>
-            </Head>
-            
+
         <div className="relative flex flex-row w-full h-screen bg-cover">
             <div className="flex flex-1 justify-center items-center">
                 <div className="w-[600px] h-[500px] flex object-contain items-center justify-center ml-64 md:ml-56">

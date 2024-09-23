@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import Head from 'next/head';
 import styles from '/components/layout.module.css';
 import React from 'react';
 
 
 const Author = () => {
     return (
-    <main className="flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3 mb-16">
+    <main className="relative flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3 mb-16">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         <div className="w-full flex flex-col items-center justify-center p-6 border border-gray-300 rounded-lg  ">
                 <img

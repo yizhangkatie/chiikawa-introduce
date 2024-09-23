@@ -1,7 +1,14 @@
 import React from "react";
 import Link from 'next/link';
+import ImageCarousel from '/components/imagecarousel';
 
 const ThirdFourth =()=>{
+    const images = [
+        '/images/third/rako/1.jpg',
+        '/images/third/rako/2.jpg',
+        '/images/third/rako/3.jpg',
+        '/images/third/rako/4.jpg',
+      ];
     return(
     <div className='relative m-auto w-full min-h-screen flex items-center'>
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-2 w-full min-h-screen bg-cover">
@@ -23,6 +30,12 @@ const ThirdFourth =()=>{
 
                     
                     </div>
+                </div>
+
+            </div>
+            <div className="flex flex-1 justify-center lg:justify-start items-center p-6 md:p-0">
+                <div className="w-[700px] h-[500px] flex object-cover items-center justify-center rounded-lg">
+                <ImageCarousel images={images}/>
                 </div>
             </div>
         

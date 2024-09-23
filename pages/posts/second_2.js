@@ -17,10 +17,6 @@ export default function SecondTwo(){
 
     return (
         <div className='relative m-auto w-full min-h-screen flex items-center'>
-
-            <Head>
-                <title>ちいかわの紹介</title>
-            </Head>
             
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 w-full min-h-screen bg-cover">
 

@@ -4,6 +4,14 @@ import Link from 'next/link';
 const ThirdThree = ()=>{
     return(
     <div className='relative m-auto w-full min-h-screen flex items-center'>
+
+        <div className="absolute inset-0 w-screen h-full opacity-0 md:opacity-100">
+            <img src="/images/third/grass.jpg" className="w-screen h-full object-fill" alt="背景图片"></img>
+            <div className="absolute right-0 top-1/2 flex items-center justify-center">
+                <img src="/images/third/kuri.png" className="z-10 w-48 h-48 animate-walk" alt="覆盖图片"></img>
+            </div>
+        </div>
+
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-2 w-full min-h-screen bg-cover">
             <div className="relative flex items-center justify-center h-full ">
 
@@ -23,13 +31,21 @@ const ThirdThree = ()=>{
                         <p className="text-lg mb-2  inline">おっさん臭くて優しい</p><br/>          
 
                     
+                    </div>
                 </div>
+
             </div>
-        </div>
-        
             <div className="absolute bottom-2 right-16 md:right-6">
                 <Link href="/posts/third">← Back to last page</Link>
             </div>
+
+            
+            <div className=" flex items-center justify-center md:opacity-0">
+                <img src="/images/third/grass.jpg" className="w-auto h-full object-contain"></img>
+                <div className="absolute right-0 bottom-20 flex items-center justify-center">
+                <img src="/images/third/kuri.png" className="z-10 w-16 h-16 animate-walk" alt="覆盖图片"></img>
+            </div>
+        </div>
         </div>   
     </div>
     )
