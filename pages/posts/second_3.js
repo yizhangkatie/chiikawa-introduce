@@ -17,13 +17,8 @@ export default function SecondThree(){
 <div className='m-auto w-full text-center'>
         <div className="flex flex-col items-center ">
 
-        <div className="relative flex flex-row w-full h-screen bg-cover">
-            <div className="flex flex-1 justify-center items-center">
-                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center ml-64 md:ml-56">
-                <ImageCarousel images={images}/>
-                </div>
-            </div>
-            <div className="absolute left-0 flex items-center h-full">
+        <div className="relative flex w-full min-h-screen bg-cover flex-col sm:flex-row">
+            <div className="relative flex items-center h-full">
                 <img src="/images/role_usagi.jpg" alt="bg_usagi" className="w-auto h-screen object-contain mt-12"/>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <img src="/images/usagi.jpg" alt="role_usagi" className="w-36 h-36 object-contain rounded-full"/>
@@ -48,10 +43,16 @@ export default function SecondThree(){
                 </div>
                 </div>
             </div>
+            <div className="flex flex-1 justify-center items-center">
+                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center">
+                <ImageCarousel images={images}/>
+                </div>
+            </div>
             <div className="absolute mt-4 bottom-2 right-4">
                 <Link href="/posts/first-post">← Back to last page</Link>
             </div>
         </div>
+        
 
         </div>
         </div>

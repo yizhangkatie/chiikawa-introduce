@@ -78,14 +78,14 @@ export default function App({ Component, pageProps }) {
         <ul className="flex space-x-4 md:space-x-12 ml-auto h-12 md:h-16 ">
           <li>
             <div className="w-auto h-full flex items-center justify-center hover:bg-pink-400 md:p-2">
-            <a onClick={() => handleNavigation('/posts/author')} className="text-xs md:text-lg font-semibold cursor-pointer">
+            <a onClick={() => handleNavigation('/posts/author')} className="w-max text-xs md:text-lg font-semibold cursor-pointer">
             作 者
             </a>
             </div>
           </li>
           <li>
             <div className="w-auto h-full flex items-center hover:bg-pink-400 md:p-2">
-            <a onClick={() => handleNavigation('/posts/first-post')} className="text-xs md:text-lg font-semibold cursor-pointer">
+            <a onClick={() => handleNavigation('/posts/first-post')} className="w-max text-xs md:text-lg font-semibold cursor-pointer">
             メインキャラ
             </a>
             </div>
@@ -93,7 +93,7 @@ export default function App({ Component, pageProps }) {
           </li>
           <li>
           <div className="w-auto h-full flex items-center hover:bg-pink-400 md:p-2">
-            <a onClick={() => handleNavigation('/posts/third')} className="text-xs md:text-lg font-semibold cursor-pointer">
+            <a onClick={() => handleNavigation('/posts/third')} className="w-max text-xs md:text-lg font-semibold cursor-pointer">
             サブキャラ
             </a>            
           </div>
