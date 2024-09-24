@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-
-const Author = () => {
+const AuthorCpn = () =>{
     return (
     <div className='lg:h-content mt-12 lg:mt-16'>
     <main className="relative flex h-full items-center justify-center px-6 space-y-3 py-8">
@@ -29,14 +28,9 @@ const Author = () => {
         <div className=" w-full h-64 md:h-full bg-cover bg-center rounded-lg slideshow-background animate-slideshow object-contain"></div>
 
     </div>
-        <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
-            <Link href="/">← Back to home</Link>
-        </div>
+
     </main>
     </div>
     )
 }
-
-Author.title = 'Naganoの紹介'
-
-export default Author
+export default AuthorCpn

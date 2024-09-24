@@ -19,9 +19,9 @@ useEffect(() => {
 }, []);
 
   return (
-    <>
+    <div className='lg:h-content mt-12 lg:mt-16'>
    
-    <main className="relative flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3 mb-16">
+    <main className="relative flex flex-col h-full items-center justify-center space-y-3 py-8 ">
 
       <h2 className="text-3xl font-bold mb-6 mt-8">
         <div className=" text-gray-700">
@@ -42,7 +42,7 @@ useEffect(() => {
 
         <a href="/posts/second_2" className={styles.card}>
           <div className={styles.cardContent}>
-            <img src="/images/chi.jpg" alt="Chii" className={styles.cardImage} />
+            <img src="/images/chii.jpg" alt="Chii" className={styles.cardImage} />
             <div className="flex flex-col items-center">
                 <h2 className="text-xl text-black font-semibold mb-2">ちいかわ</h2>
                 <p className="text-lg">ちょっぴり泣き虫だけど優しい性格。
@@ -73,9 +73,13 @@ useEffect(() => {
                 alt="chii" 
                 className="absolute bottom-0 left-4 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-400 object-contain"></img>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 lg:left-auto lg:right-4 lg:bottom-2">
+            <Link href="/">← Back to home</Link>
+        </div>
       </div>
+
     </main>
-  </>
+  </div>
 )}
 
 FirstPost.title = 'メインキャラの紹介'

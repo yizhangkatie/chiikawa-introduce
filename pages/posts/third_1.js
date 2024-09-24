@@ -13,15 +13,14 @@ const ThirdOne =()=>{
         '/images/third/shisa/6.png',
       ];
     return(
-        <div className='relative m-auto w-full min-h-screen flex items-center'>
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-2 w-full min-h-screen bg-cover">
+    <div className='m-auto w-full text-center pt-12 lg:pt-16'>
+        <div className="relative flex w-full h-full lg:h-content bg-cover flex-col lg:flex-row">
+            <div className="relative flex items-center h-full">
+                <img src="/images/role_shisa.jpg" alt="role_shisa" className="w-full h-full object-contain"/>
+                <div className="absolute inset-0 flex flex-col items-center justify-center ">
+                    <img src="/images/shisa.jpg" alt="shisa" className="w-36 h-36 object-cover rounded-full"/>
 
-            <div className="relative flex items-center justify-center  h-full ">
-
-            <img src="/images/role_shisa.jpg" alt="role_shisa" className="w-auto h-screen object-contain "/>
-            <div className="absolute inset-0 flex flex-col items-center justify-center mt-16">
-                <img src="/images/shisa.jpg" alt="shisa" className="w-36 h-36 object-cover rounded-full"/>
-                <div className="text-base md:text-lg text-left p-6 w-4/5 md:w-2/5 max-w-xs">
+                <div className="text-left p-6 w-full max-w-xs">
                     <p className='text-lg font-semibold inline'>名前：</p>
                         <p className="text-lg inline">シーサー</p><br/>
                         <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
@@ -31,21 +30,24 @@ const ThirdOne =()=>{
                         <p className="text-lg inline">沖縄県で伝説の獣像「シーサー」をモデルにして。</p><br/>
                         
                         <p className="text-lg font-semibold mb-2 inline">性格：</p>
-                        <p className="text-lg mb-2  inline">勤勉で努力を惜しまない、優しい</p><br/>          
+                        <p className="text-lg mb-2  inline">勤勉で努力を惜しまない、優しい</p><br/>
 
-                    </div>
+                </div>
                 </div>
             </div>
-            <div className="flex flex-1 justify-center lg:justify-start items-center p-6 md:p-0">
-                <div className="w-[700px] h-[500px] flex object-contain items-center justify-center">
+            <div className="flex flex-1 justify-center items-center h-content">
+            <div className="w-[600px] h-[500px] flex object-contain items-center justify-center pb-12">
                 <ImageCarousel images={images}/>
-                </div>
+            </div>
+            </div>
+
+            <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
+            <Link href="/posts/third">← Back to last page</Link>
             </div>
         </div>
-            <div className="absolute bottom-2 md:bottom-4 right-12 md:right-6">
-                <Link href="/posts/third">← Back to last page</Link>
-            </div>
-        </div>   
+        
+
+    </div> 
     )
 }
 

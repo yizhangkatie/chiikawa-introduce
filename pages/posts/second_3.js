@@ -14,13 +14,11 @@ export default function SecondThree(){
         '/images/second/u8.gif',
       ];
     return (
-<div className='m-auto w-full text-center'>
-        <div className="flex flex-col items-center ">
-
-        <div className="relative flex w-full min-h-screen bg-cover flex-col sm:flex-row">
+<div className='m-auto w-full text-center pt-12 lg:pt-16'>
+        <div className="relative flex w-full h-full lg:h-content bg-cover flex-col lg:flex-row">
             <div className="relative flex items-center h-full">
-                <img src="/images/role_usagi.jpg" alt="bg_usagi" className="w-auto h-screen object-contain mt-12"/>
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <img src="/images/role_usagi.jpg" alt="bg_usagi" className="w-full h-full object-contain"/>
+                <div className="absolute inset-0 flex flex-col items-center justify-center pb-12">
                     <img src="/images/usagi.jpg" alt="role_usagi" className="w-36 h-36 object-contain rounded-full"/>
                 <div className="text-left p-4 w-full max-w-xs">
                     <p className='text-lg font-semibold mb-2 inline'>名前：</p>
@@ -43,18 +41,17 @@ export default function SecondThree(){
                 </div>
                 </div>
             </div>
-            <div className="flex flex-1 justify-center items-center">
-                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center">
+            <div className="flex flex-1 justify-center items-center h-content">
+                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center pb-12">
                 <ImageCarousel images={images}/>
                 </div>
             </div>
-            <div className="absolute mt-4 bottom-2 right-4">
-                <Link href="/posts/first-post">← Back to last page</Link>
+            <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
+                <Link href="/posts/first">← Back to last page</Link>
             </div>
         </div>
         
 
-        </div>
         </div>
 
     )

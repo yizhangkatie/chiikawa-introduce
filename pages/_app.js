@@ -85,7 +85,7 @@ export default function App({ Component, pageProps }) {
           </li>
           <li>
             <div className="w-auto h-full flex items-center hover:bg-pink-400 md:p-2">
-            <a onClick={() => handleNavigation('/posts/first-post')} className="w-max text-xs md:text-lg font-semibold cursor-pointer">
+            <a onClick={() => handleNavigation('/posts/first')} className="w-max text-xs md:text-lg font-semibold cursor-pointer">
             メインキャラ
             </a>
             </div>

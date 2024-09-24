@@ -1,6 +1,6 @@
 import styles from '/components/layout.module.css';
-import Link from 'next/link';
-const ThirdPost = () => {  
+
+const ThirdCpn = () => {  
     return (    
     <main className="relative flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3">
         <h2 className="text-3xl font-bold mt-4">
@@ -60,12 +60,8 @@ const ThirdPost = () => {
             <img src="/images/momonga_shake.jpg" alt="Shaking Image" className={styles.shakeImg} /> 
           </div>
       </div>
-      <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-32">
-            <Link href="/">← Back to home</Link>
-        </div>
     </main>
   );}
   
-  ThirdPost.title = 'サブキャラの紹介'
   
-  export default ThirdPost;
+  export default ThirdCpn;

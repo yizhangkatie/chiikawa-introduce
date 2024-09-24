@@ -16,17 +16,14 @@ const SecondOne = () => {
       ];
 
     return (
-        <div className='relative m-auto w-full min-h-screen flex items-center'>
-            
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-2 w-full min-h-screen bg-cover">
-
-            <div className="relative flex items-center justify-center h-full ">
-
-                <img src="/images/role_hachiware.jpg" alt="bg_hachiware" className="w-auto h-screen object-contain mt-10 md:mt-12"/>
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <img src="/images/hachiware.jpg" alt="role_hachiware" className="w-24 h-24 md:w-36 md:h-36 object-contain rounded-full"/>
-                    <div className="text-base md:text-lg text-left p-6 w-4/5 md:w-full max-w-xs">
-                    <p className="font-semibold mb-2 inline">名前：</p>
+<div className='m-auto w-full text-center pt-12 lg:pt-16'>
+        <div className="relative flex w-full h-full lg:h-content bg-cover flex-col lg:flex-row">
+            <div className="relative flex items-center h-full">
+                <img src="/images/role_hachiware.jpg" alt="bg_hachiware" className="w-full h-full object-contain"/>
+                <div className="absolute inset-0 flex flex-col items-center justify-center pb-12">
+                    <img src="/images/hachiware.jpg" alt="role_hachiware" className="w-36 h-36 object-contain rounded-full"/>
+                <div className="text-left p-4 w-full max-w-xs">
+                <p className="font-semibold mb-2 inline">名前：</p>
                     <p className="mb-2  inline">ハチワレ</p><br/>
                     <p className="font-semibold mb-2 inline">誕生日：</p>
                     <p className="mb-2  inline">2020年 5月 1日</p><br/>
@@ -42,19 +39,21 @@ const SecondOne = () => {
                     
                     <p className="font-semibold mb-2 inline">能力：</p>
                     <p className="mb-2 inline">草むしり検定５級</p><br/><br/>
-                    </div>
+                </div>
                 </div>
             </div>
-            <div className="flex flex-1 justify-center lg:justify-start items-center p-6 md:p-0">
-                <div className="w-[700px] h-[500px] flex object-contain items-center justify-center">
+            <div className="flex flex-1 justify-center items-center h-content">
+                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center pb-12">
                 <ImageCarousel images={images}/>
                 </div>
             </div>
-        </div>
-            <div className="absolute bottom-2 right-12 md:right-6">
-                <Link href="/posts/first-post">← Back to last page</Link>
+            <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
+                <Link href="/posts/first">← Back to last page</Link>
             </div>
-        </div>   
+        </div>
+        
+
+        </div>
     );
   };
 

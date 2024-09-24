@@ -15,7 +15,7 @@ module.exports = {
         content: 'calc(100% - 496px)',
       },
       height: {
-        content: 'calc(100vh - 64px)',
+        content: 'calc(100vh - 72px)',
         mcontent: 'calc(100vh - 114px)',
       },
       backgroundImage: {
@@ -50,15 +50,15 @@ module.exports = {
           '50%':{transform:'scaleY(1.03) ', transformOrigin: 'bottom'},
         },
         walk: {
-          '0%':{transform:'translateY(-12%) translateX(40%)'},
+          '0%':{transform:'translateY(-12%) translateX(20%)'},
           '10%':{transform:'translateY(0) translateX(-50%)'},
-          '20%': {transform: 'translateY(-15%) translateX(-160%)' },
+          '20%': {transform: 'translateY(-18%) translateX(-160%)' },
           '30%':{transform:'translateY(0) translateX(-240%)'},
-          '40%': {transform: 'translateY(-15%) translateX(-320%)' },
+          '40%': {transform: 'translateY(-18%) translateX(-320%)' },
           '50%': {transform: 'translateY(0) translateX(-400%)' },
-          '65%': {transform: 'translateY(-15%) translateX(-480%)' },
+          '65%': {transform: 'translateY(-18%) translateX(-480%)' },
           '75%': {transform: 'translateY(0) translateX(-560%)' },
-          '85%': {transform: 'translateY(-15%) translateX(-640%)' },
+          '85%': {transform: 'translateY(-18%) translateX(-640%)' },
           '100%': {transform: 'translateY(0) translateX(-720%)' },
         }
 

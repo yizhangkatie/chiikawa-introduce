@@ -1,9 +1,9 @@
 import Layout, { siteTitle } from '../components/layout';
 import { useRouter } from 'next/router';
 
-import Author from './posts/author';
-import FirstPost from './posts/first-post';
-import ThirdPost from './posts/third';
+import AuthorCpn from '/components/author_cpn';
+import FirstCpn from '/components/first_cpn';
+import ThirdCpn from '/components/third_cpn';
 import Footer from './posts/footer';
 
 const Home=()=> {
@@ -15,9 +15,9 @@ const Home=()=> {
     <Layout home>
 
       <div>
-        <section id="section1" className="min-h-screen m-auto"> <Author /> </section>
-        <section id="section2" className="min-h-screen m-auto"> <FirstPost /> </section>
-        <section id="section3" className="min-h-screen m-auto"> <ThirdPost /> </section>
+        <section id="section1" className="min-h-screen m-auto"> <AuthorCpn /> </section>
+        <section id="section2" className="min-h-screen m-auto"> <FirstCpn /> </section>
+        <section id="section3" className="min-h-screen m-auto"> <ThirdCpn /> </section>
         <section id="section4" className="min-h-screen m-auto"> <Footer /> </section>
       </div>
 
