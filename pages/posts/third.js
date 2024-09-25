@@ -2,13 +2,13 @@ import styles from '/components/layout.module.css';
 import Link from 'next/link';
 const ThirdPost = () => {  
     return (    
-    <main className="relative flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16 space-y-3">
+    <main className="relative flex flex-col min-h-screen items-center justify-center pt-10 px-6 mt-16  space-y-4">
         <h2 className="text-3xl font-bold mt-4">
           <div className=" text-gray-700">
             <p>サブキャラ資料</p>
           </div>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6 mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 mb-6 p-6">
           <a href="/posts/third_1" className={styles.card}>
             <div className={styles.cardContent}>
               <img src="/images/shisa.jpg" alt="Chiikawa" className={styles.cardImage} />
@@ -22,7 +22,7 @@ const ThirdPost = () => {
   
           <a href="/posts/third_2" className={styles.card}>
             <div className={styles.cardContent}>
-              <img src="/images/momonga.jpg" alt="Chiikawa" className={styles.cardImage} />
+              <img src="/images/momonga.png" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
                   <h2 className="text-xl text-black font-semibold mb-2">モモンガ</h2>
                   <p className="text-lg">常にかわいこぶっている。
@@ -30,7 +30,17 @@ const ThirdPost = () => {
               </div>  
             </div>
           </a>
-  
+
+          <a href="/posts/third_4"className={styles.card}>                    
+            <div className={styles.cardContent}>
+              <img src="/images/huruhon.jpg" alt="Chiikawa" className={styles.cardImage} />
+              <div className="flex flex-col items-center">
+                  <h2 className="text-xl text-black font-semibold mb-2">古本</h2>
+                  <p className="text-lg">元々は顔が描かれていないモブキャラ。古本屋を経営していて、読書が好き。</p>
+              </div>
+            </div>
+          </a>
+
           <a href="/posts/third_3"className={styles.card}>                    
             <div className={styles.cardContent}>
               <img src="/images/kurimanjyu.jpg" alt="Chiikawa" className={styles.cardImage} />
@@ -53,14 +63,23 @@ const ThirdPost = () => {
             </div>
           </a>
 
+          <a href="/posts/third_4"className={styles.card}>                    
+            <div className={styles.cardContent}>
+              <img src="/images/yoroi.png" alt="Chiikawa" className={styles.cardImage}/>
+              <div className="flex flex-col items-center">
+                  <h2 className="text-xl text-black font-semibold mb-2">鎧たち</h2>
+                  <p className="text-lg">西洋風の鎧を纏ったような姿をしている人型の種族。</p>
+              </div>
+            </div>
+          </a>
 
       </div>
-      <div className='relative w-full h-48'>
-          <div className='absolute bottom-6 md:bottom-12 right-4 md:right-16 w-56 h-42 '>            
+      <div className='relative w-full h-48 '>
+          <div className='absolute bottom-6 right-4 md:right-16 w-56 h-42 '>            
             <img src="/images/momonga_shake.jpg" alt="Shaking Image" className={styles.shakeImg} /> 
           </div>
       </div>
-      <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-32">
+      <div className="absolute bottom-2 lg:left-auto lg:right-32">
             <Link href="/">← Back to home</Link>
         </div>
     </main>

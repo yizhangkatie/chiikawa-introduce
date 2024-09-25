@@ -23,8 +23,7 @@ export default function SecondTwo(){
                 <div className="absolute inset-0 flex flex-col items-center justify-center pb-12">
                     <img src="/images/chii.jpg" alt="role_chii" className="w-36 h-36 object-contain rounded-full"/>
                 <div className="text-left p-4 w-full max-w-xs">
-                <p className="font-semibold mb-2 inline">名前：</p>
-                <p className='font-semibold mb-2 inline'>名前：</p>
+                    <p className="font-semibold mb-2 inline">名前：</p>
                     <p className="mb-2  inline">ちいかわ</p><br/>
                     <p className="font-semibold mb-2 inline">誕生日：</p>
                     <p className="mb-2  inline">2017年 ５月１日</p><br/>

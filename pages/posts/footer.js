@@ -18,27 +18,29 @@ const Footer =() =>{
     };
 
     return (
-        <div className="relative w-full min-h-screen bg-cover overflow-hidden">
-        <div className='absolute bottom-0 w-full mb-24 md:mb-32 '>
-            <img src="/images/footer_all3.jpg" alt="footer" className="w-full h-64 object-contain animate-moveUpDown" />
-        </div>
 
-            <div className="absolute bottom-0 bg-gray-300 bg-cover text-white w-full h-36 left-0 flex items-center justify-center border-t border-gray-400 ">
-                <img src="/images/name.jpg" alt="name" className='absolute justify-center top-4 w-28 h-8 items-center '></img>
-                <div className='flex justify-center items-center w-full h-36 mt-6 p-12'>
+
+        <div className="relative flex flex-col object-contain w-full h-screen bg-cover overflow-hidden"> 
+        
+        <div className='absolute bottom-0 w-full flex flex-col justify-center items-center'>
+        <img src="/images/footer_name.jpg" className='flex  w-2/3 h-16 object-contain lg:mb-6'></img>
+            <img src="/images/footer_all3.jpg" alt="footer" className="flex w-full h-64 object-contain animate-moveUpDown" />
+        
+            <div className="relative bg-gray-300 bg-cover w-full h-36 left-0 flex items-center justify-center border-t border-gray-400 ">
+                <img src="/images/name.jpg" alt="name" className='absolute top-0 justify-center top-4 w-28 h-8 items-center '></img>
+                <div className='flex justify-center items-center flex-col lg:flex-row w-full h-auto mt-6 space-x-3 space-y-1 lg:space-x-6'>
                     <p className="justify-center text-black text-xs">プライバシー</p>
-                    <p className="ml-3 mr-3 text-black">|</p>
-                    <p className="text-black text-xs">公式アカウント/サイト</p>
-                    <a href='https://x.com/anime_chiikawa?s=21' className='justify-center items-center '>
-                        <img src="/images/x_symbol.jpg" alt="x symbol" className='ml-1 w-4 h-4 items-center justify-center rounded-full'></img>
-                    </a>
-            
-                    <a href='https://www.anime-chiikawa.jp/' className="justify-center items-center">
-                        <img src="/images/site.jpg" alt="site symbol" className='ml-2 w-4 h-4 items-center justify-center rounded-full'></img>     
-                    </a>
-                    <p className="ml-3 mr-3 text-black">|</p>
+                    <div className='flex justify-center items-center '>
+                        <p className="text-black text-xs mr-2">公式アカウント/サイト</p>
+                        <a href='https://x.com/anime_chiikawa?s=21'>
+                            <img src="/images/x_symbol.jpg" alt="x symbol" className='w-4 h-4 rounded-full'></img>
+                        </a>
+                        <a href='https://www.anime-chiikawa.jp/'>
+                            <img src="/images/site.jpg" alt="site symbol" className='ml-2 w-4 h-4 rounded-full'></img>     
+                        </a>
+                    </div>
 
-                    <div className="p-4">
+                    <div className="flex justify-center items-center">
                         <p 
                         className="text-black text-xs cursor-pointer" 
                         onClick={openModal}>            
@@ -48,13 +50,13 @@ const Footer =() =>{
                     isOpen={isModalOpen} 
                     onClose={closeModal} 
                     content={modalContent} />
-                
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
+        </div>
+
 
     )
 }

@@ -16,14 +16,14 @@ const SecondOne = () => {
       ];
 
     return (
-<div className='m-auto w-full text-center pt-12 lg:pt-16'>
+        <div className='m-auto w-full text-center pt-12 lg:pt-16'>
         <div className="relative flex w-full h-full lg:h-content bg-cover flex-col lg:flex-row">
             <div className="relative flex items-center h-full">
                 <img src="/images/role_hachiware.jpg" alt="bg_hachiware" className="w-full h-full object-contain"/>
                 <div className="absolute inset-0 flex flex-col items-center justify-center pb-12">
                     <img src="/images/hachiware.jpg" alt="role_hachiware" className="w-36 h-36 object-contain rounded-full"/>
                 <div className="text-left p-4 w-full max-w-xs">
-                <p className="font-semibold mb-2 inline">名前：</p>
+                    <p className="font-semibold mb-2 inline">名前：</p>
                     <p className="mb-2  inline">ハチワレ</p><br/>
                     <p className="font-semibold mb-2 inline">誕生日：</p>
                     <p className="mb-2  inline">2020年 5月 1日</p><br/>
@@ -43,7 +43,7 @@ const SecondOne = () => {
                 </div>
             </div>
             <div className="flex flex-1 justify-center items-center h-content">
-                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center pb-12">
+                <div className="w-[600px] h-[500px] flex object-contain items-center rounded-lg justify-center pb-12">
                 <ImageCarousel images={images}/>
                 </div>
             </div>

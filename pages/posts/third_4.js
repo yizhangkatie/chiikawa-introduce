@@ -18,7 +18,7 @@ const ThirdFourth =()=>{
                     <img src="/images/rako.jpg" alt="rako" className="w-36 h-36 object-cover rounded-full"/>
 
                 <div className="text-left p-6 w-full max-w-xs">
-                <p className=' font-semibold inline'>名前：</p>
+                        <p className='font-semibold inline'>名前：</p>
                         <p className="inline">ラッコ</p><br/>
                         <p className="font-semibold mb-2 inline">誕生日：</p>
                         <p className="inline">2021年 1月 24日</p><br/>

@@ -73,10 +73,11 @@ useEffect(() => {
                 alt="chii" 
                 className="absolute bottom-0 left-4 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-400 object-contain"></img>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 lg:left-auto lg:right-4 lg:bottom-2">
+        </div>
+        <div className="absolute bottom-2 lg:left-auto lg:right-4 ">
             <Link href="/">← Back to home</Link>
         </div>
-      </div>
+      
 
     </main>
   </div>

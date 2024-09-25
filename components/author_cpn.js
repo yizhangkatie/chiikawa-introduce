@@ -21,8 +21,8 @@ const AuthorCpn = () =>{
                 色鉛筆、コピックを用いたアナログらしい柔らかな線画、繊細で独特なタッチと、
                 かわいいだけではない世の中の不条理さを描くストーリーが老若男女問わず幅広く支持されている。 
                 </p>
-           </div>
-                <Link href={"https://x.com/ngntrtr"}>nagano's X homepage</Link>
+                <Link href={"https://x.com/ngntrtr"} className='flex justify-center'>nagano's X homepage</Link>
+                </div>
                 
         </div>
         <div className=" w-full h-64 md:h-full bg-cover bg-center rounded-lg slideshow-background animate-slideshow object-contain"></div>

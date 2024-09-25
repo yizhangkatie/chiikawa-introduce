@@ -31,10 +31,10 @@ module.exports = {
           },
         },
         slideshow: {
-        '0%, 33%': { opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
-        '33%, 66%': { opacity: '1', backgroundImage: "url('/images/ngn_hachiware.jpg')" },
-        '66%, 100%': { opacity: '1', backgroundImage: "url('/images/ngn_usagi.jpg')" },
-        '100%':{ opacity: '1', backgroundImage: "url('/images/ngn_chii.jpg')" },
+        '0%, 33%': {backgroundImage: "url('/images/ngn_chii.jpg')" },
+        '33%, 66%': {backgroundImage: "url('/images/ngn_hachiware.jpg')" },
+        '66%, 100%': {backgroundImage: "url('/images/ngn_usagi.jpg')" },
+        '100%':{backgroundImage: "url('/images/ngn_chii.jpg')" },
         },
         moveUpDown: {
           '0%, 100%': { transform: 'translateY(0)' },

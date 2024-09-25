@@ -11,21 +11,21 @@ const ThirdThree = ()=>{
                     <img src="/images/kurimanjyu.jpg" alt="kuri" className="w-36 h-36 object-cover rounded-full"/>
 
                 <div className="text-left p-6 w-full max-w-xs">
-                <p className='text-lg font-semibold inline'>名前：</p>
-                        <p className="text-lg  inline">栗まんじゅう</p><br/>
-                        <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
-                        <p className="text-lg inline">2020年 1月 29日</p><br/>
+                        <p className='font-semibold inline'>名前：</p>
+                        <p className="inline">栗まんじゅう</p><br/>
+                        <p className="font-semibold mb-2 inline">誕生日：</p>
+                        <p className="inline">2020年 1月 29日</p><br/>
     
-                        <p className="text-lg font-semibold mb-2 inline">紹介：</p>
-                        <p className="text-lg inline">和菓子の栗まんじゅうに動物のラーテルを混ぜたようなキャラクター。</p><br/>
+                        <p className="font-semibold mb-2 inline">紹介：</p>
+                        <p className="inline">和菓子の栗まんじゅうに動物のラーテルを混ぜたようなキャラクター。</p><br/>
                         
-                        <p className="text-lg font-semibold mb-2 inline">性格：</p>
-                        <p className="text-lg mb-2  inline">おっさん臭くて優しい</p><br/>
+                        <p className="font-semibold mb-2 inline">性格：</p>
+                        <p className="mb-2  inline">おっさん臭くて優しい</p><br/>
 
                 </div>
                 </div>
             </div>
-            <div className="relative flex flex-1 justify-center items-center">
+            <div className="relative flex flex-1 justify-center items-center overflow-hidden">
                 <img src="/images/third/grass.jpg" className="w-full h-full object-fill" alt="背景图片"></img>
             <div className="absolute right-0 top-1/2 flex items-center justify-center">
                 <img src="/images/third/kuri.png" className="z-10 w-16 lg:w-36 h-16 lg:h-36 animate-walk" alt="覆盖图片"></img>

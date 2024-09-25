@@ -21,16 +21,16 @@ const ThirdOne =()=>{
                     <img src="/images/shisa.jpg" alt="shisa" className="w-36 h-36 object-cover rounded-full"/>
 
                 <div className="text-left p-6 w-full max-w-xs">
-                    <p className='text-lg font-semibold inline'>名前：</p>
-                        <p className="text-lg inline">シーサー</p><br/>
-                        <p className="text-lg font-semibold mb-2 inline">誕生日：</p>
-                        <p className="text-lg inline">2021年 8月 24日</p><br/>
+                        <p className='font-semibold inline'>名前：</p>
+                        <p className="inline">シーサー</p><br/>
+                        <p className="font-semibold mb-2 inline">誕生日：</p>
+                        <p className="inline">2021年 8月 24日</p><br/>
     
-                        <p className="text-lg font-semibold mb-2 inline">紹介：</p>
-                        <p className="text-lg inline">沖縄県で伝説の獣像「シーサー」をモデルにして。</p><br/>
+                        <p className="font-semibold mb-2 inline">紹介：</p>
+                        <p className="inline">沖縄県で伝説の獣像「シーサー」をモデルにして。</p><br/>
                         
-                        <p className="text-lg font-semibold mb-2 inline">性格：</p>
-                        <p className="text-lg mb-2  inline">勤勉で努力を惜しまない、優しい</p><br/>
+                        <p className="font-semibold mb-2 inline">性格：</p>
+                        <p className="mb-2  inline">勤勉で努力を惜しまない、優しい</p><br/>
 
                 </div>
                 </div>
