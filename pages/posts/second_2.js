@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import ImageCarousel from '/components/imagecarousel';
+import InfoWindow from '../../components/info_window';
 
 export default function SecondTwo(){
     const images = [
@@ -42,10 +42,19 @@ export default function SecondTwo(){
                 </div>
                 </div>
             </div>
-            <div className="flex flex-1 justify-center items-center h-content">
-                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center pb-12">
-                <ImageCarousel images={images}/>
-                </div>
+            <div className="flex flex-1 justify-center items-center w-full h-content pt-8 pb-8 lg:p-12">
+                    <InfoWindow 
+                    images={images} 
+                    bg="/images/role_chii.jpg" 
+                    text={(
+                        <>
+                          <span style={{ paddingLeft: '2em' }}>セリフで表現されるのは「フ!」「わぁ~……」「わァ…ァ…」などの2~3文字程度の短い単語のみで、具体的な言葉は話さない。
+                            自分が嫌な時は「イヤッ」や「ヤダッ」と明確に発音して拒否反応を示す。<br/></span>
+                          <span style={{ paddingLeft: '2em' }}>歌やダンスが好きなようで、たまに「ヤヤ〜…ンパパ…ヒュパヒュパ…」と歌ったり、歌いながら踊っている。
+                            草むしり検定5級の合格に向けて勉強中であるが、現時点で2回不合格になっているため勉強はあまり得意ではない模様。
+                            くじ運が強く、むちゃうまヨーグルトの懸賞で当たった家に住んでいたり、すき焼きセットを当てたりしている。</span>
+                        </>
+                      )}/>
             </div>
             <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
                 <Link href="/posts/first">← Back to last page</Link>

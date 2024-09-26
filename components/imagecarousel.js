@@ -19,7 +19,7 @@ function ImageCarousel({ images }){
     }, [currentIndex]);
 
     return (
-      <div className="relative w-full h-full items-center justify-center object-contain overflow-hidden mt-10">
+      <div className="relative w-full h-full items-center justify-center object-contain overflow-hidden">
         <motion.div
           className="absolute inset-0 flex items-center justify-center"
           key={images[currentIndex]}

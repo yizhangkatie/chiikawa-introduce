@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import ImageCarousel from '/components/imagecarousel';
+import InfoWindow from '../../components/info_window';
 
 export default function SecondThree(){
     const images = [
@@ -41,10 +41,19 @@ export default function SecondThree(){
                 </div>
                 </div>
             </div>
-            <div className="flex flex-1 justify-center items-center h-content">
-                <div className="w-[600px] h-[500px] flex object-contain items-center justify-center pb-12">
-                <ImageCarousel images={images}/>
-                </div>
+            <div className="flex flex-1 justify-center items-center w-full h-content pt-8 pb-8 lg:p-12">
+                    <InfoWindow 
+                    images={images} 
+                    bg="/images/role_usagi.jpg" 
+                    text={(
+                        <>
+                          <span style={{ paddingLeft: '2em' }}>人語を話すことは無い、常に「ハァ？」 「ウラ」 「ヤハ」 「プルャ」 といった奇声めいた鳴き声を発している。
+                            特に「フルルルルルルァーイ！」という巻き舌染みた鳴き声が特徴。<br/></span>
+                          <span style={{ paddingLeft: '2em' }}>普段どんな生活をしているか謎で、津々浦々旅行するのが好きらしい。
+                            呪いのアイテムをよく買ってきてしまう。常にテンションが高く自由奔放に振る舞い、時にはトラブルメーカーのような一面もあるが、
+                            <a href="./second_2">ちいかわ</a>や<a href="./second_1">ハチワレ</a>がピンチの時に助けたり、サポートをしたりする友達思いの面も多くある。</span>
+                        </>
+                      )}/>
             </div>
             <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
                 <Link href="/posts/first">← Back to last page</Link>

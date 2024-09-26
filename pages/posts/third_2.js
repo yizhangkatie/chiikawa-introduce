@@ -25,7 +25,7 @@ const ThirdTwo =()=>{
 
                 </div>
             </div>
-            
+
             <div className="relative flex lg:flex-1 justify-center items-center h-content">
                 <div className="absolute top-0 left-4 lg:left-12 w-56 h-1/2 lg:w-80 lg:h-96 lg:mt-12">
                     <div className="relative w-full h-full hover:animate-strech">

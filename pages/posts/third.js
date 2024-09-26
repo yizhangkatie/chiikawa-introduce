@@ -31,17 +31,17 @@ const ThirdPost = () => {
             </div>
           </a>
 
-          <a href="/posts/third_4"className={styles.card}>                    
+          <a href="/posts/third_3"className={styles.card}>                    
             <div className={styles.cardContent}>
               <img src="/images/huruhon.jpg" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
-                  <h2 className="text-xl text-black font-semibold mb-2">古本</h2>
+                  <h2 className="text-xl text-black font-semibold mb-2">古本屋</h2>
                   <p className="text-lg">元々は顔が描かれていないモブキャラ。古本屋を経営していて、読書が好き。</p>
               </div>
             </div>
           </a>
 
-          <a href="/posts/third_3"className={styles.card}>                    
+          <a href="/posts/third_4"className={styles.card}>                    
             <div className={styles.cardContent}>
               <img src="/images/kurimanjyu.jpg" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
@@ -52,7 +52,7 @@ const ThirdPost = () => {
             </div>
           </a>
 
-          <a href="/posts/third_4"className={styles.card}>                    
+          <a href="/posts/third_5"className={styles.card}>                    
             <div className={styles.cardContent}>
               <img src="/images/rako.jpg" alt="Chiikawa" className={styles.cardImage} />
               <div className="flex flex-col items-center">
@@ -63,7 +63,7 @@ const ThirdPost = () => {
             </div>
           </a>
 
-          <a href="/posts/third_4"className={styles.card}>                    
+          <a href="/posts/third_3"className={styles.card}>                    
             <div className={styles.cardContent}>
               <img src="/images/yoroi.png" alt="Chiikawa" className={styles.cardImage}/>
               <div className="flex flex-col items-center">
@@ -74,7 +74,7 @@ const ThirdPost = () => {
           </a>
 
       </div>
-      <div className='relative w-full h-48 '>
+      <div className='relative w-full h-48'>
           <div className='absolute bottom-6 right-4 md:right-16 w-56 h-42 '>            
             <img src="/images/momonga_shake.jpg" alt="Shaking Image" className={styles.shakeImg} /> 
           </div>

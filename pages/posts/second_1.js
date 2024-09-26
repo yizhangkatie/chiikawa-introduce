@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
-import ImageCarousel from '/components/imagecarousel';
+import InfoWindow from '../../components/info_window';
 
 const SecondOne = () => {
     const images = [
@@ -42,10 +42,18 @@ const SecondOne = () => {
                 </div>
                 </div>
             </div>
-            <div className="flex flex-1 justify-center items-center h-content">
-                <div className="w-[600px] h-[500px] flex object-contain items-center rounded-lg justify-center pb-12">
-                <ImageCarousel images={images}/>
-                </div>
+            <div className="flex flex-1 justify-center items-center w-full h-content pt-8 pb-8 lg:p-12">
+                    <InfoWindow 
+                    images={images} 
+                    bg="/images/role_hachiware.jpg" 
+                    text={(
+                        <>
+                          <span style={{ paddingLeft: '2em' }}>明確な言葉を発することのない<a href="./second_2">ちいかわ</a> や<a href="/posts/second_3">うさぎ</a>の言葉を「翻訳」したり、状況説明をしたりと、読者と物語の橋渡し的な役割。
+                          説明役に入ることが多いが、「～ってコト？」という独特の言い回し（通称：ハチワレ構文）を使うのが特徴。<br/></span>
+                          <span style={{ paddingLeft: '2em' }}><a href="./third_4">ラッコ</a>に憧れており、訓練をつけてもらって一緒に討伐に出かけたこともあった。
+                          洞窟に暮らしており、慎ましやかな生活であることが描かれている。カメラで写真を撮るのが趣味。親友との思い出を大切にする傾向がある。</span>
+                        </>
+                      )}/>
             </div>
             <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
                 <Link href="/posts/first">← Back to last page</Link>
