@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useState } from "react";
 import Image from "next/image";
 
+
 export default function App({ Component, pageProps }) {
   console.info(Component)
     const router = useRouter();

@@ -63,9 +63,9 @@ const ThirdPost = () => {
             </div>
           </a>
 
-          <a href="/posts/third_3"className={styles.card}>                    
+          <a href="/posts/third_6"className={styles.card}>                    
             <div className={styles.cardContent}>
-              <img src="/images/yoroi.png" alt="Chiikawa" className={styles.cardImage}/>
+              <img src="/images/yoroi.jpg" alt="Chiikawa" className={styles.cardImage}/>
               <div className="flex flex-col items-center">
                   <h2 className="text-xl text-black font-semibold mb-2">鎧たち</h2>
                   <p className="text-lg">西洋風の鎧を纏ったような姿をしている人型の種族。</p>

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import Modal from '/components/modal';
+import MyModal from '/components/modal';
 import { useState } from 'react';
 
 const Footer =() =>{
@@ -46,7 +46,7 @@ const Footer =() =>{
                         onClick={openModal}>            
                         動画コンテンツへの利用
                         </p>
-                    <Modal 
+                    <MyModal 
                     isOpen={isModalOpen} 
                     onClose={closeModal} 
                     content={modalContent} />
