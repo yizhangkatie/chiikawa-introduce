@@ -21,7 +21,7 @@ const SecondOne = () => {
             <div className="relative flex items-center h-full">
                 <img src="/images/role_hachiware.jpg" alt="bg_hachiware" className="w-full h-full object-contain"/>
                 <div className="absolute inset-0 flex flex-col items-center justify-center pb-12">
-                    <img src="/images/hachiware.jpg" alt="role_hachiware" className="w-36 h-36 object-contain rounded-full"/>
+                    <img src="/images/hachiware.jpg" alt="role_hachiware" className="w-24 h-24 object-contain rounded-full"/>
                 <div className="text-left p-4 w-full max-w-xs">
                     <p className="font-semibold mb-2 inline">名前：</p>
                     <p className="mb-2  inline">ハチワレ</p><br/>
@@ -50,7 +50,7 @@ const SecondOne = () => {
                         <>
                           <span style={{ paddingLeft: '2em' }}>明確な言葉を発することのない<a href="./second_2">ちいかわ</a> や<a href="/posts/second_3">うさぎ</a>の言葉を「翻訳」したり、状況説明をしたりと、読者と物語の橋渡し的な役割。
                           説明役に入ることが多いが、「～ってコト？」という独特の言い回し（通称：ハチワレ構文）を使うのが特徴。<br/></span>
-                          <span style={{ paddingLeft: '2em' }}><a href="./third_4">ラッコ</a>に憧れており、訓練をつけてもらって一緒に討伐に出かけたこともあった。
+                          <span style={{ paddingLeft: '2em' }}><a href="./third_5">ラッコ</a>に憧れており、訓練をつけてもらって一緒に討伐に出かけたこともあった。
                           洞窟に暮らしており、慎ましやかな生活であることが描かれている。カメラで写真を撮るのが趣味。親友との思い出を大切にする傾向がある。</span>
                         </>
                       )}/>

@@ -36,7 +36,7 @@ const ThirdOne =()=>{
                 </div>
                 </div>
             </div>
-            <div className="flex flex-1 justify-center items-center w-full h-content pt-8 pb-8 lg:p-12">
+            <div className="flex flex-1 justify-center items-center bg-cover bg-center object-contain w-full h-content pt-8 pb-8 lg:p-12">
                     <InfoWindow 
                     images={images} 
                     bg="/images/role_shisa.jpg" 

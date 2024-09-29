@@ -33,31 +33,32 @@ const ThirdFour = ()=>{
                 </div>
                 </div>
             </div>
-            <div className="relative flex flex-1 justify-center items-center overflow-hidden">
-                <img src="/images/third/grass.jpg" className="w-full h-full object-fill" alt="bg"></img>
-            <div className="absolute inset-0 flex items-center">
-            <div className="flex flex-1 justify-center items-center w-full h-content pt-8 pb-8 lg:p-12">
+            <div className="relative flex flex-1 justify-center items-center overflow-hidden"
+            style={{ 
+                backgroundImage: `url("/images/third/grass.jpg")` ,
+                backgroundSize: 'contain',
+                }}>
+            
+            <div className="flex flex-1 justify-center items-center w-full h-content pt-8 pb-8 z-10">
                     <InfoWindow 
-                    images={images} 
+                    images={[]} 
                     bg="/images/role_kurimanjyu.jpg" 
                     text={(
                         <>
                           <span style={{ paddingLeft: '2em' }}>見た目は可愛らしいがおっさん臭い行動をとり、お酒とツマミを嗜んでいる姿をちいかわたちにたびたび目撃される。
-                            また、お酒の資格を持っているから<a href="./third_1">シーサー</a>に勉強を教えるなど面倒見が良い。
+                            お酒の資格を持っているから<a href="./third_1">シーサー</a>に勉強を教えるなど面倒見が良い。
                             なお、甘酒は資格無しでも飲める。言葉は発さず、飲んだ時「ハァーッ!」と言うのみ。<br/></span>
                           <span style={{ paddingLeft: '2em' }}>基本的な仕事が『リモートワーク』であり、草むしりには時々参加するものの討伐という危険な仕事には手を染めず悠々自適な生活を送る。
                             ちいかわ世界において<a href="./third_5">ラッコ</a>先生とは別ベクトルで強者であると言える。</span>
                         </>
                       )}/>
             </div>
-            </div>
             <div className="absolute right-0 top-1/2 flex items-center justify-center">
                 <img src="/images/third/kuri.png" className="z-10 w-16 lg:w-36 h-16 lg:h-36 animate-walk" alt="kuri"></img>
             </div>
             </div>
 
-
-            <div className="absolute bottom-0 left-0 right-0 lg:left-auto lg:right-4">
+            <div className="absolute bottom-0 left-0 right-0 lg:left-auto lg:right-4 z-10">
             <Link href="/posts/third">← Back to last page</Link>
             </div>
         </div>
