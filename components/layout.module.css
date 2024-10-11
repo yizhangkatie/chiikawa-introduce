@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   max-width: 100vw;
-
 }
 
 .header {
@@ -83,8 +82,8 @@
   position: relative;
   z-index: 1;
   opacity: 0;
-  font-size: 16px; 
-  color: #333; 
+  font-size: 16px;
+  color: #333;
 }
 
 .card:hover .cardImage {
@@ -103,11 +102,10 @@
   transform: scale(1.1); /* 悬停时放大卡片 */
 }
 
-
 .slideshow-background {
   background-size: cover;
   background-position: center;
-  transition:  opacity 0.4s ease-in-out; /* 动画过渡效果 */
+  transition: opacity 0.4s ease-in-out; /* 动画过渡效果 */
 }
 
 @keyframes rotate {
@@ -115,25 +113,24 @@
     transform: rotate(0deg);
   }
   20% {
-    transform: rotate(-10deg) ;
+    transform: rotate(-10deg);
   }
   40% {
-    transform: rotate(-15deg) ;
+    transform: rotate(-15deg);
   }
   60% {
-    transform: rotate(-22deg) ;
+    transform: rotate(-22deg);
   }
   100% {
     transform: rotate(0deg);
   }
 }
 
-
 .shakeImg {
   width: 300px;
   height: 200px;
-  animation: transform 0.2s ease ; 
-}  
+  animation: transform 0.2s ease;
+}
 .shakeImg:hover {
-  animation: rotate 3s linear infinite; 
+  animation: rotate 3s linear infinite;
 }

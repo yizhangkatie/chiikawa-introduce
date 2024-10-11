@@ -1,7 +1,10 @@
-const { transform } = require("next/dist/build/swc");
+const { transform } = require('next/dist/build/swc');
 
 module.exports = {
-  content: ['./pages/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './pages/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+  ],
   important: true,
   theme: {
     extend: {
@@ -31,10 +34,10 @@ module.exports = {
           },
         },
         slideshow: {
-        '0%, 33%': {backgroundImage: "url('/images/ngn_chii.jpg')" },
-        '33%, 66%': {backgroundImage: "url('/images/ngn_hachiware.jpg')" },
-        '66%, 100%': {backgroundImage: "url('/images/ngn_usagi.jpg')" },
-        '100%':{backgroundImage: "url('/images/ngn_chii.jpg')" },
+          '0%, 33%': { backgroundImage: "url('/images/ngn_chii.jpg')" },
+          '33%, 66%': { backgroundImage: "url('/images/ngn_hachiware.jpg')" },
+          '66%, 100%': { backgroundImage: "url('/images/ngn_usagi.jpg')" },
+          '100%': { backgroundImage: "url('/images/ngn_chii.jpg')" },
         },
         moveUpDown: {
           '0%, 100%': { transform: 'translateY(0)' },
@@ -46,33 +49,33 @@ module.exports = {
           '20%, 40%, 60%, 80%': { transform: 'translateX(5px)' },
         },
         strech: {
-          '0%, 100%':{transform:'translateY(0)' ,transformOrigin: 'bottom '},
-          '50%':{transform:'scaleY(1.03) ', transformOrigin: 'bottom'},
+          '0%, 100%': {
+            transform: 'translateY(0)',
+            transformOrigin: 'bottom ',
+          },
+          '50%': { transform: 'scaleY(1.03) ', transformOrigin: 'bottom' },
         },
         walk: {
-          '0%':{transform:'translateY(-12%) translateX(20%)'},
-          '10%':{transform:'translateY(0) translateX(-50%)'},
-          '20%': {transform: 'translateY(-18%) translateX(-160%)' },
-          '30%':{transform:'translateY(0) translateX(-240%)'},
-          '40%': {transform: 'translateY(-18%) translateX(-320%)' },
-          '50%': {transform: 'translateY(0) translateX(-400%)' },
-          '65%': {transform: 'translateY(-18%) translateX(-480%)' },
-          '75%': {transform: 'translateY(0) translateX(-560%)' },
-          '85%': {transform: 'translateY(-18%) translateX(-640%)' },
-          '100%': {transform: 'translateY(0) translateX(-720%)' },
-        }
-
+          '0%': { transform: 'translateY(-12%) translateX(20%)' },
+          '10%': { transform: 'translateY(0) translateX(-50%)' },
+          '20%': { transform: 'translateY(-18%) translateX(-160%)' },
+          '30%': { transform: 'translateY(0) translateX(-240%)' },
+          '40%': { transform: 'translateY(-18%) translateX(-320%)' },
+          '50%': { transform: 'translateY(0) translateX(-400%)' },
+          '65%': { transform: 'translateY(-18%) translateX(-480%)' },
+          '75%': { transform: 'translateY(0) translateX(-560%)' },
+          '85%': { transform: 'translateY(-18%) translateX(-640%)' },
+          '100%': { transform: 'translateY(0) translateX(-720%)' },
+        },
       },
       animation: {
         slideshow: 'slideshow 12s infinite',
-        moveUpDown:'moveUpDown 3s infinite',
+        moveUpDown: 'moveUpDown 3s infinite',
         shake: 'shake 0.5s ease-in-out infinite',
-        strech:'strech 1.5s ease-in-out infinite',
-        walk:'walk 12s ease-in-out infinite',
+        strech: 'strech 1.5s ease-in-out infinite',
+        walk: 'walk 12s ease-in-out infinite',
       },
     },
   },
   plugins: [],
-
-
-}
+};
