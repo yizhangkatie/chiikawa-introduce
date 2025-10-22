@@ -31,7 +31,7 @@ export default function ThirdSix() {
 
   return (
     <div className="relative w-full h-content flex flex-col items-center justify-center pt-12 lg:pt-16">
-      <div className="flex flex-col">
+      {/* <div className="flex flex-col">
         <Tabs aria-label="Dynamic tabs" items={tabs}>
           {(item) => (
             <Tab
@@ -39,11 +39,11 @@ export default function ThirdSix() {
               title={
                 <div className="flex items-center justify-center space-x-12">
                   <button className="w-32 h-12 bg-pink-200 text-lg rounded-lg flex items-center justify-center">
-                    {/* <img
+                    <img
                       src={item.image}
                       alt={item.label}
                       className="w-16 h-16"
-                    /> */}
+                    /> 
                     {item.label}
                   </button>
                 </div>
@@ -57,14 +57,14 @@ export default function ThirdSix() {
                       alt={item.label}
                       className="w-64 h-64"
                     />
-                    {/* <p className="text-sm text-gray-700">{item.content.text}</p>  */}
+                     <p className="text-sm text-gray-700">{item.content.text}</p> 
                   </div>
                 </CardBody>
               </Card>
             </Tab>
           )}
         </Tabs>
-      </div>
+      </div> */}
     </div>
   );
 }
