@@ -67,6 +67,10 @@ module.exports = {
           '85%': { transform: 'translateY(-18%) translateX(-640%)' },
           '100%': { transform: 'translateY(0) translateX(-720%)' },
         },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         slideshow: 'slideshow 12s infinite',
@@ -74,6 +78,7 @@ module.exports = {
         shake: 'shake 0.5s ease-in-out infinite',
         strech: 'strech 1.5s ease-in-out infinite',
         walk: 'walk 12s ease-in-out infinite',
+        spin: 'spin 1s linear infinite',
       },
     },
   },

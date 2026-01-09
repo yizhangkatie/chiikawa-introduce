@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
+import Loading from '../components/loading';
 
 export default function App({ Component, pageProps }) {
   console.info(Component);
@@ -23,7 +24,7 @@ export default function App({ Component, pageProps }) {
       setImageIndex((prev) => (prev === 0 ? 1 : 0));
       clickCount += 1;
       if (clickCount < 4) {
-        setTimeout(switchImage, 300); // 图片时间间隔
+        setTimeout(switchImage, 180); // 图片时间间隔
       } else {
         window.scrollTo({
           top: 0,
@@ -50,8 +51,23 @@ export default function App({ Component, pageProps }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  //等待动画
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000); // 5 秒
+
+    return () => clearTimeout(timer);
+  }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return (
     <>
+      {loading && <Loading />}
+
       <Header component={Component} />
       {!isOnFirstPage && (
         <div className=" flex flex-col items-center fixed bottom-4 z-50 right-4">

@@ -1,2 +1,21 @@
-This is a website introducing Chiikawa.
-Chiikawa (ちいかわ), also known as Nanka Chiisakute Kawaii Yatsu (なんか小さくてかわいいやつ,"Something Small and Cute"), is a Japanese manga series by Nagano.
+# ちいかわ紹介サイト (Chiikawa Fan Site)
+
+このサイトは、ナガノ先生による人気漫画作品「ちいかわ（なんか小さくてかわいいやつ）」を紹介するウェブサイトです。
+
+## 制作目的 (Project Purpose)
+このプロジェクトは、自分のフロントエンド開発スキルの向上を目的とした練習用サイトです。
+主に以下の技術の実践を目的として制作しました。
+- **Next.js** 
+- **Tailwind CSS** 
+- **Framer Motion**
+
+## 公開URL (Demo)
+こちらから実際のウェブサイトをご覧いただけます：
+[你的网址]
+
+## 注意事項 (Notes)
+- **非営利目的：** 本サイトは個人の学習およびファン活動の一環として制作されたものであり、営利目的での利用は一切行っておりません。
+- **著作権について：** 使用している画像やキャラクターの著作権は、原作者および関係各社に帰属します。
+
+---
+

@@ -61,7 +61,7 @@ const Footer = () => {
                 className="text-black text-xs cursor-pointer"
                 onClick={openModal}
               >
-                動画コンテンツへの利用
+                開発者について
               </p>
               <MyModal
                 isOpen={isModalOpen}

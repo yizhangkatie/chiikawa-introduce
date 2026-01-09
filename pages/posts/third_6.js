@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tabs, Tab, Card, CardBody, image } from '@nextui-org/react';
-
+import Link from 'next/link';
 export default function ThirdSix() {
   const tabs = [
     {
@@ -30,41 +30,16 @@ export default function ThirdSix() {
   ];
 
   return (
-    <div className="relative w-full h-content flex flex-col items-center justify-center pt-12 lg:pt-16">
-      {/* <div className="flex flex-col">
-        <Tabs aria-label="Dynamic tabs" items={tabs}>
-          {(item) => (
-            <Tab
-              key={item.id}
-              title={
-                <div className="flex items-center justify-center space-x-12">
-                  <button className="w-32 h-12 bg-pink-200 text-lg rounded-lg flex items-center justify-center">
-                    <img
-                      src={item.image}
-                      alt={item.label}
-                      className="w-16 h-16"
-                    /> 
-                    {item.label}
-                  </button>
-                </div>
-              }
-            >
-              <Card className="p-12">
-                <CardBody>
-                  <div className="flex flex-row items-center justify-center">
-                    <img
-                      src={item.content.image}
-                      alt={item.label}
-                      className="w-64 h-64"
-                    />
-                     <p className="text-sm text-gray-700">{item.content.text}</p> 
-                  </div>
-                </CardBody>
-              </Card>
-            </Tab>
-          )}
-        </Tabs>
-      </div> */}
+    <div className="m-auto w-full pt-12 lg:pt-16">
+      <div className="mx-auto flex flex-1 justify-center items-center w-2/3 md:w-1/3 h-content p-4 lg:p-12">
+        <p className="text-base md:text-lg z-10">
+          ここまで作ったところで開発者が燃え尽きてしまったため、このページはまだ未完成です(m(_
+          _)m)。
+        </p>
+      </div>
+      <div className="absolute bottom-2 left-0 right-0 lg:left-auto lg:right-4">
+        <Link href="/posts/third">← Back to last page</Link>
+      </div>
     </div>
   );
 }
