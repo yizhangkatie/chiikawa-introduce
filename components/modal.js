@@ -39,9 +39,9 @@ const Modal = ({ isOpen, onClose, content }) => {
             主にレスポンシブデザインとNext.jsのルーティングの実践を目的としています。ナガノ先生の作品が大好きで、その魅力を表現するためにこのサイトを制作しました。
           </li>
 
-          <p className="mt-8 text-xs text-gray-400 italic">
+          {/* <p className="mt-8 text-xs text-gray-400 italic">
             ※ 「鎧たち」のページ制作中に開発者が真っ白に燃え尽きてしまったため、このページのみ未完成です (m(_ _)m)
-          </p>
+          </p> */}
         </div>
         {/* <p className="text-black text-lg p-6">
           本サイトは個人の学習・練習目的で制作したものです。 Developed by 黄芳玲
